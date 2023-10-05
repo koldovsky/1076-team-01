@@ -1,9 +1,18 @@
 <section class="form">
-    <form action="#" method="post">
-        <h2>Write Us</h2>
-        <input type="text" name="name" placeholder="Name*" required>
-        <input type="email" name="email" placeholder="Email*" required>
-        <input type="text" name="message" placeholder="Message">
-        <input type="submit" value="SEND">
-    </form> 
+    <div class="form__container">
+        <form action="#" method="post">
+            <h2 class="form__title">Write Us</h2>
+            <div class="form__container-namebox">
+                <input type="text" name="name" id="uname" placeholder="Name*" minlength="3" maxlength="64" required>
+            </div>
+            <div class="form__container-emailbox">
+                <input type="email" name="email" id="umail" placeholder="Email*" minlength="3" maxlength="64" required>
+            </div>
+            <div class="form__container-messagebox">
+                <input type="text" name="message" id="umessage" placeholder="Message" minlength="10" maxlength="256"
+                    required>
+            </div>
+            <input type="submit" value="SEND">
+        </form>
+    </div>
 </section>
