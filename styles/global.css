@@ -4,8 +4,26 @@
     box-sizing: border-box;
 }
 
-:root{
-
+:root {
+    --white: #fff;
+    --text-dark: #27292b;
+    --text-brown: #684f40;
+    --text-warm-light: #fff5eb;
+    --text-cold-light: #626060;
+    --text-menu-light: #b9aea7;
+    --text-address-light: #706e6e;
+    --subtitle-menu-light: #fff5eb;
+    --text-variant-grey: #595959;
+    --input-text: #7e7f81;
+    --btn-primary: #e1a455;
+    --btn-outline-dark: #684f40;
+    --btn-outline-dark: #fff;
+    --btn-primary-hover: #ff8542;
+    --btn-outline-hover: #e1a455;
+    --light-link-hover: #684f40;
+    --input-background: #e5e5e5;
+    --background-dark: #27292b;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -13,3 +31,8 @@ img {
     width: 100%;
 }
 
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: auto;
+}
