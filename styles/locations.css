@@ -1,4 +1,6 @@
 @import url(global.css);
+@import url(header-nav.css);
+
 @media (min-width: 320px) {
     .locations__title {
         font-family: Prata, serif;
