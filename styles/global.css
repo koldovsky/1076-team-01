@@ -57,4 +57,9 @@ a {
     border-radius: 35px;
     background: var(--btn-primary);
     padding: 7px 27px;
+    transition: background 0.5s ease;
+}
+
+.btn-primary:hover {
+    background: var(--btn-primary-hover);
 }
