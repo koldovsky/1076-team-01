@@ -1,17 +1,21 @@
-.header,
-.header a {
+.header {
     position: relative;
-    letter-spacing: 0.3px;
+}
+
+.header a {
     color: var(--white);
 }
 
 .fixed {
+    width: 100%;
     position: fixed;
 }
 
 .header__nav {
     display: flex;
     align-items: center;
+    color: var(--white);
+    letter-spacing: 0.3px;
     justify-content: space-between;
     padding: 40px 4px;
 }
@@ -111,7 +115,7 @@
 }
 
 
-@media (min-width: 992px) {
+@media (min-width: 892px) {
     .header__nav-logo {
         flex: 1;
     }

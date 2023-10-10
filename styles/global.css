@@ -63,3 +63,7 @@ a {
 .btn-primary:hover {
     background: var(--btn-primary-hover);
 }
+
+.header__background--dark {
+    background: var(--background-dark);
+}
