@@ -1,1 +1,12 @@
 @import url(global.css);
+@import url(header-nav.css);
+
+body {
+    position: relative;
+}
+
+.header__background-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/index-header-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

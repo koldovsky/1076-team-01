@@ -12,8 +12,12 @@
 
 <body>
     <header class="header">
-        <nav data-include="header-nav.partial.html"></nav>
-        <section data-include="header-intro.partial.html"></section>
+        <div class="header__background-img">
+            <div class="header__container container">
+                <nav data-include="header-nav.partial.html"></nav>
+                <section data-include="header-intro.partial.html"></section>
+            </div>
+        </div>
     </header>
     <main class="main">
         <section data-include="philosophy.partial.html"></section>
@@ -23,6 +27,7 @@
         <section data-include="locations-cards.partial.html"></section>
     </main>
     <footer class="footer" data-include="footer.partial.html"></footer>
+    <script type="module" src="/js/index.js"></script>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </body>
 
