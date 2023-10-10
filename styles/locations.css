@@ -8,15 +8,18 @@
         font-weight: 400;
         line-height: 39px;
     }
+
     .locations__cards {
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px 30px;
     }
+
     .locations__card-img {
         object-fit: cover;
         margin: 0px;
     }
+
     .form {
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/locations-background.jpeg);
         background-size: cover;
@@ -25,6 +28,7 @@
         padding: 90px 0;
         margin: -5px;
     }
+
     .form .form__container {
         background-color: var(--white);
         border-radius: 20px;
@@ -36,12 +40,34 @@
         justify-content: space-between;
         padding: 10px 10px;
         margin: 1em 1.5em 2em;
-        #uname,
-        #umail,
-        #umessage {
-        display: block;
-        }
     }
+
+    .form #uname,
+    #umail,
+    #umessage {
+        display: block;
+        width: 100%;
+        resize: none;
+        background-color: var(--input-background);
+        border-radius: 35px;
+        border-color: var(--input-background);
+        border-style: none;
+        height: auto;
+        padding: 10px;
+        margin: 20px auto 20px;
+    }
+
+    .form .form__btm {
+        background-color: var(--btn-outline-hover);
+        border-radius: 35px;
+        border-color: var(--btn-primary-hover);
+        border-style: none;
+        height: auto;
+        padding: 10px;
+        margin: 20px auto 20px;
+        width: 100%;
+    }
+
     .form .form__title {
         font-family: Prata, serif;
         color: var(--text-dark);
@@ -50,15 +76,19 @@
         line-height: 39px;
         text-align: center;
     }
-    
 }
+
 @media (min-width: 700px) {
     .locations__cards {
         grid-template-columns: 1fr 1fr;
     }
-    .form .form__container {  margin: 1em auto 2em;
-    padding: 40px;}
+
+    .form .form__container {
+        margin: 1em auto 2em;
+        padding: 40px;
+    }
 }
+
 @media (min-width: 900px) {
     .locations__cards {
         grid-template-columns: 1fr 1fr 1fr;
