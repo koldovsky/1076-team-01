@@ -45,7 +45,7 @@ img {
 
 .container {
     max-width: 1200px;
-    padding: 0 20px;
+    padding: 0 24px;
     margin: auto;
 }
 
@@ -93,4 +93,22 @@ a {
 
 .header__background--dark {
     background: var(--background-dark);
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 32px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding: 0 15px;
+    }
 }
