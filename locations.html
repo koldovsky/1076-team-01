@@ -7,20 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locations Page | Bakery</title>
     <link rel="shortcut icon" href="img/bread_shorticon.png" type="image/png">
+    <link rel="stylesheet" href="styles/locations.css">
 </head>
 
 <body>
     <header class="header">
-        <nav data-include="header-nav.partial.html"></nav>
+        <div class="header__background--dark">
+            <div class="header__container container">
+                <nav data-include="header-nav.partial.html"></nav>
+            </div>
+        </div>
     </header>
     <main class="main">
-        <!-- Here will be contacts container with pics, adress and phones numbs-->
         <section data-include="locations-cards.partial.html"></section>
-        <section data-include="locations.map.partial.html"></section>
+        <div data-include="locations.map.partial.html"></div>
         <section id="write-us" data-include="locations.contact-form.partial.html"></section>
-
     </main>
     <footer class="footer" data-include="footer.partial.html"></footer>
+    <script type="module" src="/js/index.js"></script>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </body>
 

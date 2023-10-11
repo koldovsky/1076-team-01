@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Story Page | Bakery</title>
     <link rel="shortcut icon" type="image/png" href="img/title-favicon.png" sizes="16x16">
+    <link rel="stylesheet" href="styles/our-story.css">
 </head>
 
 <body>
     <header class="header">
-        <nav data-include="header-nav.partial.html"></nav>
+        <div class="header__background--dark">
+            <div class="header__container container">
+                <nav data-include="header-nav.partial.html"></nav>
+            </div>
+        </div>
     </header>
     <main>
         <section class="passion">
-            <div class="passion__container">
+            <div class="passion__container container">
 
                 <div class="passion__img">
-                    <img width="400" src="img/passion-for-baking.jpg" alt="Passion for Baking">
+                    <img src="img/passion-for-baking.jpg" alt="Passion for Baking">
                 </div>
 
                 <div class="passion__column">
@@ -34,28 +39,30 @@
             </div>
         </section>
         <section class="gallery">
-            <div class="gallery__container">
+            <div class="gallery__container container">
                 <h2 class="gallery__title">Gallery</h2>
 
                 <div class="gallery__images">
-                    <img width="200" src="img/about-gallery-1.jpg" alt="image-1" class="gallery__img">
-                    <img width="200" src="img/about-gallery-2.jpg" alt="image-2" class="gallery__img">
-                    <img width="200" src="img/about-gallery-3.jpg" alt="image-3" class="gallery__img">
-                    <img width="200" src="img/about-gallery-4.jpg" alt="image-4" class="gallery__img">
-                    <img width="200" src="img/about-gallery-5.jpg" alt="image-5" class="gallery__img">
-                    <img width="200" src="img/about-gallery-6.jpg" alt="image-6" class="gallery__img">
-                    <img width="200" src="img/about-gallery-7.jpg" alt="image-7" class="gallery__img">
-                    <img width="200" src="img/about-gallery-8.jpg" alt="image-8" class="gallery__img">
+                    <img src="img/about-gallery-1.jpg" alt="image-1" class="gallery__img">
+                    <img src="img/about-gallery-2.jpg" alt="image-2" class="gallery__img">
+                    <img src="img/about-gallery-3.jpg" alt="image-3" class="gallery__img">
+                    <img src="img/about-gallery-4.jpg" alt="image-4" class="gallery__img">
+                    <img src="img/about-gallery-5.jpg" alt="image-5" class="gallery__img">
+                    <img src="img/about-gallery-6.jpg" alt="image-6" class="gallery__img">
+                    <img src="img/about-gallery-7.jpg" alt="image-7" class="gallery__img">
+                    <img src="img/about-gallery-8.jpg" alt="image-8" class="gallery__img">
                 </div>
             </div>
         </section>
         <section class="our-story">
-            <div class="our-story__container">
+            <div class="our-story__container container">
                 <h2 class="our-story__title">Our Story</h2>
 
                 <h3 class="our-story__description">WarmBread Bakery was founded in Autumn, 2016</h3>
 
-                <p class="our-story__text">WarmBread Bakery was founded in Autumn, 2016</p>
+                <p class="our-story__text">The idea of creating WarmBread came about when we lived and worked as bakers
+                    in Chicago, Illinois. Our story starts with us, with how we met, what we did and learned, and now
+                    you are a part of it.</p>
 
                 <p class="our-story__text">Our very first meeting at our BA in Culinary Arts in 2011 marked the
                     beginning of our journey. We were sitting next to each other at the open baking workshop and have
@@ -69,7 +76,7 @@
                     Ballock.</p>
 
                 <div class="our-story__img">
-                    <img width="400" src="img/bakers-hands.jpg" alt="bakers hands" class="hands">
+                    <img src="img/bakers-hands.jpg" alt="bakers hands" class="hands">
                 </div>
 
                 <p class="our-story__text">We moved to London, UK and opened WarmBread Bakery. Our small bakery began
@@ -86,7 +93,7 @@
                     prepare for the winter.</p>
 
                 <div class="our-story__img">
-                    <img width="400" src="img/bakers.jpg" alt="bakers work" class="hands">
+                    <img src="img/bakers.jpg" alt="bakers work" class="hands">
                 </div>
 
                 <p class="our-story__text">At WarmBread, we specialize primarily on baking breads and flaky pastries. We
@@ -109,6 +116,7 @@
 
     </main>
     <footer class="footer" data-include="footer.partial.html"></footer>
+    <script type="module" src="/js/index.js"></script>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 
 </body>

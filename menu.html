@@ -1,62 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/bread_shorticon.png" type="image/png" />
+  <link rel="stylesheet" href="styles/careers.css">
+  <title>Menu Page| Bakery</title>
 </head>
+
 <body>
-  <section> 
-  <div class="HeaderMenu">
-    <h2 class="MenuHead">Our Menu</h2>
-    <span class="UnderMenuText">Take a look at our menu and choose your meal or order it right from our bakery</span>
-  </div>
-<div class="Menu">
-  <div class="slider">
-  
+  <header class="header">
+    <div class="header__background--dark">
+      <div class="header__container container">
+        <nav data-include="header-nav.partial.html"></nav>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <section>
+      <div class="HeaderMenu">
+        <h2 class="MenuHead">Our Menu</h2>
+        <span class="UnderMenuText">Take a look at our menu and choose your meal or order it right from our
+          bakery</span>
+      </div>
+      <div class="Menu">
+        <div class="slider">
+          <!--   
     <a href="">Breads</a>
     <a href="">Breakfast</a>
-    <a href="">Lunch & Dinner</a>
+    <a href="">Lunch & Dinner</a> -->
 
-  
-    <div class="slides">
-      <div id="slide-1">
-        <ul>
-          <li>Carrot Rye</li>
-          <li>Seeded Rye</li>
-          <li>Chia Rye</li>
-          <li>Sourdough Loaf</li>
-          <li>Olander Loaf</li>
-          <li>Wholegrain Ciabatta Baguette</li>
-        </ul>
+
+          <div class="slides">
+            <div id="slide-1">
+              <ul>
+                <li>Carrot Rye</li>
+                <li>Seeded Rye</li>
+                <li>Chia Rye</li>
+                <li>Sourdough Loaf</li>
+                <li>Olander Loaf</li>
+                <li>Wholegrain Ciabatta Baguette</li>
+              </ul>
+            </div>
+            <div id="slide-2">
+              <ul>
+                <li>Cinnamon Swirl</li>
+                <li>Seasonal Fruit Skyr</li>
+                <li>Danish Roll with Cheese</li>
+                <li>Carrot Bun</li>
+                <li>Carrot Juice, 250 ml</li>
+                <li>Coffee Latte</li>
+              </ul>
+            </div>
+            <div id="slide-3">
+              <ul>
+                <li>Potato Focaccia</li>
+                <li>Goat's Cheese Focaccia</li>
+                <li>Vegetarian Stew</li>
+                <li>Ham & Cheese Baguette</li>
+                <li>Mackerel on Rye</li>
+                <li>Tiger Prawn Baguette</li>
+              </ul>
+            </div>
+            <div class="MenuButtom">
+              <button>Download menu</button>
+            </div>
+
+          </div>
+        </div>
       </div>
-      <div id="slide-2">
-        <ul>
-          <li>Cinnamon Swirl</li>
-          <li>Seasonal Fruit Skyr</li>
-          <li>Danish Roll with Cheese</li>
-          <li>Carrot Bun</li>
-          <li>Carrot Juice, 250 ml</li>
-          <li>Coffee Latte</li>
-        </ul>
-      </div>
-      <div id="slide-3">
-        <ul>
-          <li>Potato Focaccia</li>
-          <li>Goat's Cheese Focaccia</li>
-          <li>Vegetarian Stew</li>
-          <li>Ham & Cheese Baguette</li>
-          <li>Mackerel on Rye</li>
-          <li>Tiger Prawn Baguette</li>
-        </ul>
-      </div>
-      <div class="MenuButtom">
-        <button>Download menu</button>
-      </div>
-      
-    </div>
-  </div>
-</div>
-</section>
-</body>
+    </section>
+
+    <footer class="footer" data-include="footer.partial.html"></footer>
+    <script type="module" src="/js/index.js"></script>
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+  </body>
+
 </html>
