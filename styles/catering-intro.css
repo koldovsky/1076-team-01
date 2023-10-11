@@ -36,7 +36,7 @@
 
 @media (min-width: 992px) {
     .catering-intro {
-        background-position: 20% 37%;
+        background-position: 0% 37%;
         font-size: 17px;
         letter-spacing: 0.2px;
         padding: 120px 0;
@@ -54,7 +54,7 @@
 
 @media (min-width: 1200px) {
     .catering-intro {
-        background-position: 20% 36%;
+        background-position: 0% 37%;
     }
     
     .catering-intro__content {
