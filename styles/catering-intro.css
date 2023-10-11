@@ -1,5 +1,5 @@
 .catering-intro {
-    background: linear-gradient(90deg, rgb(21 18 18) 0%, rgb(10 9 9 / 31%) 100%), url(../img/catering-intro-background.jpg) 20% no-repeat fixed;    
+    background: linear-gradient(90deg, rgb(16 16 16) 0%, rgb(11 10 10 / 25%) 100%), url(../img/catering-intro-background.jpg) 20% no-repeat fixed;    
     background-size: cover;
     font-family: 'Lato', sans-serif;  
     line-height: 1.5; 
@@ -36,6 +36,7 @@
 
 @media (min-width: 992px) {
     .catering-intro {
+        background-position: 20% 37%;
         font-size: 17px;
         letter-spacing: 0.2px;
         padding: 120px 0;
@@ -56,12 +57,6 @@
         background-position: 20% 36%;
     }
     
-    .catering-intro {
-        font-size: 17px;
-        letter-spacing: 0.2px;
-        padding: 120px 0;
-    }
-
     .catering-intro__content {
         max-width: 680px;
     }

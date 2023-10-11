@@ -4,7 +4,7 @@
 }
 
 .header a {
-    color: var(--light-color);
+    color: var(--light-link-header);
 }
 
 .fixed {
@@ -152,6 +152,7 @@
     .nav-list {
         flex-direction: row;
         font-size: 15px;
+        height: 32px;
         gap: 29px;
     }
 
@@ -162,14 +163,14 @@
 
 @media (min-width: 1180px) {
     .nav-list {
-        letter-spacing: normal;
-        font-weight: 300;
+        letter-spacing: 0px;
+        font-weight: 400;
         font-size: 15px;
-        gap: 31px;
+        gap: 30px;
     }  
 
     .header__nav {
-        padding: 47px 0;
+        padding: 45px 0;
     }
 
     .header__nav-img {
@@ -177,6 +178,6 @@
     }
 
     .header__nav-btn {
-        margin-left: 16px;
+        margin-left: 15px;
     }
 }

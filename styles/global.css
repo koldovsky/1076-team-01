@@ -26,6 +26,7 @@
     --btn-outline-light: #fff;
     --btn-primary-hover: #ff8542;
     --btn-outline-hover: #e1a455;
+    --light-link-header: #ffffffd4;
     --light-link-hover: #684f40;
     --input-background: #e5e5e5;
     --background-dark: #27292b;
@@ -62,10 +63,12 @@ a {
 
 .btn-primary {
     font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.4px;
     border: none;
     border-radius: 35px;
     background: var(--btn-primary);
-    padding: 7px 27px;
+    padding: 8px 27px;
     transition: background 0.5s ease;
 }
 
