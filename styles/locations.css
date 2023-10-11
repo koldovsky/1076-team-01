@@ -30,7 +30,7 @@
 }
 
 .form .form__container {
-    background-color: var(--white);
+    background-color: var(--light-color.);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@
     border-radius: 35px;
     font-family: Lato, serif;
     font-size: 14px;
-    color: var(--white);
+    color: var(--light-color);
     border-color: var(--btn-primary-hover);
     border-style: none;
     height: auto;
