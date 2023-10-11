@@ -48,4 +48,40 @@
     <script type="module" src="/js/index.js"></script>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
   </body>
+<body>
+  <header class="header">
+    <div class="header__background--dark">
+      <div class="header__container container">
+        <nav data-include="header-nav.partial.html"></nav>
+      </div>
+    </div>
+    <div data-include="careers.header-banner.partial.html"></div>
+  </header>
+  <main class="career">
+    <section class="career__info" id="career__info">
+      <div class="container career__new-stuff">
+        <div class="career__new-stuff-left">
+          <h3 class="career__new-stuff-title">
+            We are currently hiring new staff for our busy season:
+          </h3>
+          <ul class="career__new-stuff-vacancies">
+            <li>- Barista, Café Server/ Customer Service</li>
+            <li>- Baker/Cake Decorator</li>
+            <li>- Accounting Clerk</li>
+            <li>- Retail Baker</li>
+            <li>- Delivery Driver</li>
+          </ul>
+          <button class="btn">Apply now</button>
+        </div>
+        <div class="career__new-stuff-right">
+          <img src="img/career-info-image.jpg" alt="Career baker" />
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" data-include="footer.partial.html"></footer>
+  <script type="module" src="./js/index.js"></script>
+  <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+</body>
+
 </html>
