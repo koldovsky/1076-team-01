@@ -29,6 +29,9 @@
     --light-link-hover: #684f40;
     --input-background: #e5e5e5;
     --background-dark: #27292b;
+    --border-contact-form-light: #83b3db;
+    --border-contact-form-dark: #84ADCB;
+
     /* --font-lato-sans-serif: "Lato", sans-serif; */
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
