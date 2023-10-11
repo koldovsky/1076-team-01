@@ -1,20 +1,26 @@
 .locations__title {
-    font-family: Prata, serif;
+    font-family: 'Prata', serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 39px;
     text-align: center;
+    padding: 70px 0;
 }
 
 .locations__cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px 30px;
+    font-family: 'Prata', serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
 }
 
 .locations__card-img {
+    padding: 20px;
+    height: 222px;
     object-fit: cover;
-    margin: 0px;
 }
 
 .map iframe {
@@ -32,7 +38,6 @@
     background-position: center center;
     padding: 90px 0;
     margin: -5px;
-    
 }
 
 .form .form__container {
@@ -56,6 +61,7 @@
     border: none;
     border-radius: 0px;
 }
+
 .form .form__page-section {
     padding: 20px 20px 0 20px;
     background-color: var(--light-color);
@@ -70,7 +76,7 @@
     display: block;
     width: 100%;
     resize: none;
-    font-family: Lato, serif;
+    font-family: 'Lato', serif;
     font-size: 14px;
     color: var(--input-text);
     background-color: var(--input-background);
@@ -85,7 +91,7 @@
 .form .form__btn {
     background-color: var(--btn-outline-hover);
     border-radius: 35px;
-    font-family: Lato, serif;
+    font-family: 'Lato', serif;
     font-size: 14px;
     color: var(--light-color);
     border-color: var(--btn-primary-hover);
@@ -98,13 +104,13 @@
 
 .form .form__btn:hover {
     background-color: var(--btn-primary-hover);
-    border-color: var(----btn-outline-hover);
+    border-color: var(--btn-outline-hover);
     border-style: none;
     cursor: pointer;
 }
 
 .form .form__title {
-    font-family: Prata, serif;
+    font-family: 'Prata', serif;
     color: var(--text-dark);
     font-size: 30px;
     font-weight: 400;
@@ -119,7 +125,7 @@
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
     .locations__cards {
         grid-template-columns: 1fr 1fr;
     }
