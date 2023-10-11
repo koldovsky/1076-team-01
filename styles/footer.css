@@ -1,0 +1,15 @@
+@import url(global.css);
+
+.footer__nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-dark);
+    color: #fff;
+}
+.footer__divider{
+    background-color: var(--background-dark);
+    color: #fff;
+}
+.footer__logo{
+    max-width: 260px;
+}
