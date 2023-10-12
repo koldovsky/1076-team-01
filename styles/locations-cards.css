@@ -1,6 +1,3 @@
-@import url(global.css);
-@import url(header-nav.css);
-
 .locations__title {
     font-family: Prata, serif;
     font-size: 30px;
@@ -82,7 +79,7 @@
 @media (min-width: 992px) {
     .locations__cards {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 20px;
+        grid-column-gap: 30px;
     }
 
     .locations__title {
