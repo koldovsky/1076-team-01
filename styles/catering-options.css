@@ -1,0 +1,111 @@
+.catering {
+    background: url("../img/catering-options-background.jpeg") 20% no-repeat fixed;
+    background-size: cover;
+    font-family: 'Prata', serif;
+    letter-spacing: 0px;
+    padding: 90px 0;
+}
+
+.catering__title {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.3;
+    color: var(--text-dark);
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.catering__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.catering__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.catering__item-visual {
+    position: relative;
+    width: 100%;
+}
+
+.catering__item-visual::after {
+    display: block;
+    content: '';
+    padding-bottom: 82.5%;
+}
+
+.catering__item-visual img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+img.catering__breakfast {
+    object-position: left;
+}
+
+img.catering__quiches {
+    object-position: 56% 0%;
+}
+
+img.catering__salads {
+    object-position: bottom;
+}
+
+img.catering__party {
+    object-position: 84% 0%;
+}
+
+img.catering__finale {
+    object-position: 46% 0%;
+}
+
+img.catering__specials {
+    object-position: 0% 75%;
+}
+
+.catering__item-title {
+    font-weight: 300;
+    line-height: 1.3;
+    font-size: 22px;
+}
+
+@media (min-width: 768px) {
+    .catering {
+        padding: 90px 0 95px;
+    }
+
+    .catering__title {
+        font-size: 33px;
+    }    
+    
+    .catering__list {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .catering {
+        padding: 90px 0 100px;
+    }
+
+    .catering__title {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }    
+
+    .catering__list {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+}

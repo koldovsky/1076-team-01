@@ -1,15 +1,24 @@
 @import url(global.css);
 
+.footer {
+  background: var(--background-dark);
+  padding: 90px 24px 40px;
+}
+
+.footer__logo-image{
+  max-width: 260px;
+}
 .footer__nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--background-dark);
-    color: #fff;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--text-variant-grey);
 }
-.footer__divider{
-    background-color: var(--background-dark);
-    color: #fff;
+
+.footer__link-element, .footer__follow-title, .footer__schedule-item {
+  color: var(--white);
+  font-size: 17px;
 }
-.footer__logo{
-    max-width: 260px;
+
+.footer__rights-content{
+  color: var(--white);
+  font-size: 14px;
 }
