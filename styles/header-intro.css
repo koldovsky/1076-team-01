@@ -1,0 +1,19 @@
+.header__intro__title {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Prata', serif;
+    color: #fff;
+    text-align: center;
+    font-size: 58px;
+}
+.header__intro-text {
+    font-family: 'Lato', sans-serif;
+    color: #fff5eb;
+    font-size: 20px;
+    text-align: center;
+}
+.header__intro-sub-text {
+    font-family: 'Lato', sans-serif;
+    color: #fff5eb;
+    font-size: 17px;
+    text-align: center;
+}
