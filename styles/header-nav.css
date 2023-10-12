@@ -1,9 +1,10 @@
 .header {
     position: relative;
+    z-index: 1;
 }
 
 .header a {
-    color: var(--white);
+    color: var(--light-link-header);
 }
 
 .fixed {
@@ -11,13 +12,19 @@
     position: fixed;
 }
 
+.header__background {
+    background-image: linear-gradient(#3e3f428c, #1b1c1f99), url(../img/index-header-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .header__nav {
     display: flex;
     align-items: center;
-    color: var(--white);
+    color: var(--light-color);
     letter-spacing: 0.3px;
     justify-content: space-between;
-    padding: 40px 4px;
+    padding: 40px 0;
 }
 
 .header__nav-img {
@@ -28,8 +35,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 17px;
+    letter-spacing: 0px;
     gap: 20px;
 }
 
@@ -55,7 +63,7 @@
     width: 24px;
     height: 2px;
     position: relative;
-    background: var(--white);
+    background: var(--light-color);
     cursor: pointer;
     transition: background .2s ease-out;
 }
@@ -67,7 +75,7 @@
     height: 100%;
     display: block;
     position: absolute;
-    background: var(--white);
+    background: var(--light-color);
     transition: all .2s ease-out;
 }
 
@@ -90,6 +98,7 @@
     align-items: center;
     padding: 40px 0;
     gap: 30px;
+    z-index: 1;
 }
 
 .header.responsive .header__background,
@@ -117,7 +126,7 @@
 
 @media (min-width: 992px) {
     .header__nav {
-        padding: 45px 20px;
+        padding: 45px 0;
     }
 
     .header__nav-logo {
@@ -144,7 +153,7 @@
     .nav-list {
         flex-direction: row;
         font-size: 15px;
-        gap: 29px;
+        gap: 30px;
     }
 
     .header__nav-btn {
@@ -153,8 +162,12 @@
 }
 
 @media (min-width: 1180px) {
+    .nav-list {
+        height: 32px;
+    }  
+
     .header__nav {
-        padding: 47px 15px;
+        padding: 45px 0;
     }
 
     .header__nav-img {

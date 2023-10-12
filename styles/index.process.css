@@ -1,0 +1,36 @@
+.process__title {
+    color: var(--text-dark);
+    font-size: 30px;
+    font-family: 'Prata', serif;
+    text-align: center;
+}
+
+@media (min-width: 320px){
+.process__image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+}
+@media (min-width: 992px) {
+.process__image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;   
+}
+}
+
+@media (min-width: 1200px) {
+.process__image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+         
+    }
+}
