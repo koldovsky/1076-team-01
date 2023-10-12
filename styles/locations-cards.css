@@ -66,3 +66,26 @@
     aspect-ratio: 6/4;
     object-position: 0% 75%;
 }
+
+@media (min-width: 768px) {
+    .locations__cards {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+
+    .locations__title {
+        font-size: 33px;
+
+    }
+}
+
+@media (min-width: 992px) {
+    .locations__cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+
+    .locations__title {
+        font-size: 36px;
+    }
+}
