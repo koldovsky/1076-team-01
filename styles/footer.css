@@ -1,21 +1,15 @@
 @import url(global.css);
+
 .footer {
-  background-color: var(--background-dark);
-  color: #fff;
-  font-size: 17px;
+  background: var(--background-dark);
+  padding: 90px 24px 40px;
 }
-.footer__nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 90px 15px 30px;
+
+.footer__nav{
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--text-variant-grey);
 }
-.footer__divider {
-  border-top: solid 1px var(--text-cold-light);
-}
-.footer__logo {
+
+.footer__logo-image{
   max-width: 260px;
 }
-.footer__schedule{
-    margin-top: 30px;
-}
-@media (min-width: 1200px){}
