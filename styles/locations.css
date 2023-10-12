@@ -1,85 +1,131 @@
-@import url(global.css);
-@import url(header-nav.css);
+.locations__title {
+    font-family: 'Prata', serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 39px;
+    text-align: center;
+    padding: 70px 0;
+}
 
-@media (min-width: 320px) {
-    .locations__title {
-        font-family: Prata, serif;
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 39px;
-        text-align: center;
-    }
+.locations__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px 30px;
+    font-family: 'Prata', serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+}
 
-    .locations__cards {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 30px 30px;
-    }
+.locations__card-img {
+    padding: 20px;
+    height: 222px;
+    object-fit: cover;
+}
 
-    .locations__card-img {
-        object-fit: cover;
-        margin: 0px;
-    }
+.map iframe {
+    width: 100%;
+    height: 576px;
+    border: 0;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
 
-    .form {
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/locations-background.jpeg);
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center center;
-        padding: 90px 0;
-        margin: -5px;
-    }
+.form {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/locations-background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 90px 0;
+    margin: -5px;
+}
 
+.form .form__container {
+    background-color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
+    max-width: 350px;
+    justify-content: space-between;
+    padding: 10px 10px;
+    margin: 1em 1.5em 2em;
+}
+
+.form .form__border {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: repeating-linear-gradient(135deg, var(--border-contact-form-light) 0px, var(--border-contact-form-light) 30px, transparent 30px, transparent 50px, var(--border-contact-form-light) 50px, var(--border-contact-form-dark) 80px, transparent 80px, transparent 100px);
+    padding: 20px;
+    border: none;
+    border-radius: 0px;
+}
+
+.form .form__page-section {
+    padding: 20px 20px 0 20px;
+    background-color: var(--light-color);
+    display: block;
+    position: relative;
+    display: block;
+}
+
+.form #uname,
+#umail,
+#umessage {
+    display: block;
+    width: 100%;
+    resize: none;
+    font-family: 'Lato', serif;
+    font-size: 14px;
+    color: var(--input-text);
+    background-color: var(--input-background);
+    border-radius: 25px;
+    border-color: var(--input-background);
+    border-style: none;
+    height: auto;
+    padding: 10px;
+    margin: 20px auto 20px;
+}
+
+.form .form__btn {
+    background-color: var(--btn-outline-hover);
+    border-radius: 35px;
+    font-family: 'Lato', serif;
+    font-size: 14px;
+    color: var(--light-color);
+    border-color: var(--btn-primary-hover);
+    border-style: none;
+    height: auto;
+    padding: 10px;
+    margin: 20px auto 20px;
+    width: 100%;
+}
+
+.form .form__btn:hover {
+    background-color: var(--btn-primary-hover);
+    border-color: var(--btn-outline-hover);
+    border-style: none;
+    cursor: pointer;
+}
+
+.form .form__title {
+    font-family: 'Prata', serif;
+    color: var(--text-dark);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 39px;
+    text-align: center;
+}
+
+@media (min-width: 425px) {
     .form .form__container {
-        background-color: var(--white);
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-width: 150px;
-        max-width: 400px;
-        justify-content: space-between;
-        padding: 10px 10px;
-        margin: 1em 1.5em 2em;
-    }
-
-    .form #uname,
-    #umail,
-    #umessage {
-        display: block;
-        width: 100%;
-        resize: none;
-        background-color: var(--input-background);
-        border-radius: 35px;
-        border-color: var(--input-background);
-        border-style: none;
-        height: auto;
-        padding: 10px;
-        margin: 20px auto 20px;
-    }
-
-    .form .form__btm {
-        background-color: var(--btn-outline-hover);
-        border-radius: 35px;
-        border-color: var(--btn-primary-hover);
-        border-style: none;
-        height: auto;
-        padding: 10px;
-        margin: 20px auto 20px;
-        width: 100%;
-    }
-
-    .form .form__title {
-        font-family: Prata, serif;
-        color: var(--text-dark);
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 39px;
-        text-align: center;
+        margin: 1em auto;
+        padding: 40px;
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
     .locations__cards {
         grid-template-columns: 1fr 1fr;
     }

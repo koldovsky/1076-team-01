@@ -1,0 +1,15 @@
+@import url(global.css);
+
+.footer {
+  background: var(--background-dark);
+  padding: 90px 24px 40px;
+}
+
+.footer__nav{
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--text-variant-grey);
+}
+
+.footer__logo-image{
+  max-width: 260px;
+}
