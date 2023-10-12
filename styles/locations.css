@@ -1,6 +1,6 @@
 @import url(global.css);
 @import url(header-nav.css);
-@import url(locations-cards.css);
+
 
 .map iframe {
     width: 100%;
