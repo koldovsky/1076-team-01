@@ -1,5 +1,5 @@
 .philosophy {
-    background-color: rgb(39,41,43);
+    background-color: var(--backgroung-dark);
     padding: 50px 40px;
     color: var(--light-color);
     text-align: left;  
