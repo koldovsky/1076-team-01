@@ -10,14 +10,17 @@
 }
 
 :root {
-    --white: #fff;
+    --light-color: #fff;
     --text-dark: #27292b;
-    --text-brown: #684f40;
     --text-warm-light: #fff5eb;
     --text-cold-light: #626060;
     --text-menu-light: #b9aea7;
+    --dark-text-accent: #706e6e;
+    --light-text-accent: #ffffffdb;
+    --text-description-accent: #684f40;
     --text-address-light: #706e6e;
     --subtitle-menu-light: #fff5eb;
+    --subtitle-font-size: 20px;
     --text-variant-grey: #595959;
     --input-text: #7e7f81;
     --btn-primary: #e1a455;
@@ -25,11 +28,20 @@
     --btn-outline-light: #fff;
     --btn-primary-hover: #ff8542;
     --btn-outline-hover: #e1a455;
+    --light-link-header: #ffffffd4;
     --light-link-hover: #684f40;
     --input-background: #e5e5e5;
     --background-dark: #27292b;
+    --border-contact-form-light: #83b3db;
+    --border-contact-form-dark: #84ADCB;
+
+    /* --font-lato-sans-serif: "Lato", sans-serif; */
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
 }
 
 img {
@@ -39,6 +51,72 @@ img {
 
 .container {
     max-width: 1200px;
-    padding: 0 20px;
+    padding: 0 24px;
     margin: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-primary {
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.4px;
+    border: none;
+    border-radius: 35px;
+    background: var(--btn-primary);
+    padding: 8px 27px;
+    transition: background 0.5s ease;
+}
+
+.btn-light{
+    font-size: 14px;
+    font-family: var(--font-lato-sans-serif);
+    color: var(--text-dark);
+    border: solid 2px var(--btn-outline-dark);
+    border-radius: 25px;
+    padding: 13px 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 1;
+    background: transparent;
+    transition: all 0.5s ease;
+}
+
+.btn-light:hover{
+    color: var(--btn-primary);
+    border-color: var(--btn-primary);
+}
+
+.btn-primary:hover {
+    background: var(--btn-primary-hover);
+}
+
+
+.header__background--dark {
+    background: var(--background-dark);
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 32px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 15px;
+    }
 }
