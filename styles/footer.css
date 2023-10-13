@@ -14,11 +14,23 @@
 }
 
 .footer__link-element, .footer__follow-title, .footer__schedule-item {
-  color: var(--white);
+  color: var(--light-color);
   font-size: 17px;
 }
 
 .footer__rights-content{
-  color: var(--white);
+  color: var(--light-color);
   font-size: 14px;
+}
+
+@media (min-width: 320px) {
+
+}
+
+@media (min-width: 700px) {
+
+}
+
+@media (min-width: 900px) {
+
 }
