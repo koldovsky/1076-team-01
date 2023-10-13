@@ -41,7 +41,7 @@
 @media (min-width: 320px) {
 
   .footer__logo a,
-  img {
+  .footer__logo img {
     display: block;
     margin: 0 auto;
   }

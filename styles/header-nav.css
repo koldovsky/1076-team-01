@@ -27,7 +27,8 @@
     padding: 40px 0;
 }
 
-.header__nav-img {
+.header__nav-link {
+    display: block;
     width: 218px;
 }
 
@@ -133,7 +134,7 @@
         flex: 1;
     }
 
-    .header__nav-img {
+    .header__nav-link {
         width: 56%;
     }
 
@@ -170,8 +171,8 @@
         padding: 45px 0;
     }
 
-    .header__nav-img {
-        max-width: 218px;
+    .header__nav-link {
+        max-width: 220px;
     }
 
     .header__nav-btn {
