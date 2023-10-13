@@ -1,9 +1,9 @@
 .featured__block{
-    padding: 90px 0 100px;
+    padding: 70px 0 60px;
 }
 
 .our-bread__block{
-    padding: 90px 0 100px;
+    padding: 70px 0 60px;
 }
 
 .our-bread__block .type__description{
@@ -32,7 +32,6 @@
 
 .type__image{
     width: 100%;
-    height: 185.96px;
     object-fit: cover;
     background-color: transparent!important;
     aspect-ratio: 7/5.05;
