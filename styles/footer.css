@@ -1,7 +1,7 @@
 @import url(global.css);
 
 .footer__logo-image {
-  max-width: 218px;
+  max-width: 260px;
 }
 
 .footer__nav {
@@ -9,7 +9,9 @@
   border-bottom: 1px solid var(--text-variant-grey);
 }
 
-.footer__logo, .footer__follow-title, .footer__nav {
+.footer__logo,
+.footer__follow-title,
+.footer__nav {
   margin-bottom: 30px;
 }
 
@@ -31,7 +33,31 @@
   font-size: 14px;
 }
 
-@media (min-width: 320px) {}
+@media (min-width: 320px) {
+
+  .footer__schedule-item,
+  .footer__link-element,
+  .footer__follow-title,
+  .footer__rights-content {
+    display: block;
+    text-align: center;
+    padding: 8px 0;
+  }
+
+  .footer__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__smm-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+}
 
 @media (min-width: 700px) {}
 
