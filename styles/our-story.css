@@ -7,10 +7,6 @@ p{
     font-family: Lato, sans-serif;
     color: var(--text-address-light);
 }
-.container{
-    padding: 0;
-}
-
 .primary__container{
     padding: 90px 0;
     display: grid;
@@ -37,14 +33,17 @@ p{
     line-height: 25.5px;
     margin-top: 25px;
 }
-.gallery__container{ 
-    padding: 90px 0; 
+.gallery{
     display: grid;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
         url(../img/dark-image-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+.gallery__container{ 
+    padding: 90px 0; 
+    
 }
 .gallery__title{
     font-size: 30px;
@@ -142,6 +141,22 @@ p{
         height: 190px;
     }
 }
+@media(min-width:550px){
+    .gallery__images img{
+        height: 335px;
+    }
+    .about-story__img img{
+        height: 237px;
+    }
+}
+@media(min-width:700px){
+    .gallery__images img{
+        height: 435px;
+    }
+    .about-story__img img{
+        height: 329px;
+    }
+}
 @media(min-width:768px){
     .primary__container {
         padding: 95px 17px;
@@ -197,7 +212,15 @@ p{
         height: 332px;
     }
 }
-@media (min-width: 1024px){
+@media(min-width: 900px){
+    .gallery__images img{
+        height: 270px;
+    }
+    .about-story__img img{
+        height: 395px;
+    }
+}
+@media (min-width: 1000px){
     .primary__container {
         padding: 100px 40px;
         gap: 30px;
@@ -241,5 +264,39 @@ p{
     }
     .about-story__img img{
         height: 446px;
+    }
+}
+@media(min-width: 1200px){
+    .gallery__images img{
+        height: 171px;
+    } 
+    .about-story__img img{
+        height: 540px;
+    }
+}
+@media(min-width:1440px){
+    .primary__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 100px 0px;
+    }
+    .gallery__container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+    .gallery__images img{
+        height: 180px;
+    }
+    .about-story{
+        padding: 0;
+    }
+    .about-story__container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+    .about-story__img img{
+        height: 592px;
     }
 }
