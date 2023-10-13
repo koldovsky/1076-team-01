@@ -74,6 +74,36 @@
   }
 }
 
-@media (min-width: 767px) {}
+@media (min-width: 767px) {
+  .footer__schedule-item, .footer__link-element, .footer__follow-title, .footer__rights-content {
+      display: block;
+      text-align: left;
+      padding: 8px 0;
+  }
+
+  .footer__nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .footer__logo-schedule-wrap {
+      display: flex;
+      flex-direction: row;
+      gap: 80px;
+  }
+
+  .footer__link-items {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+  }
+
+  .footer__rights {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+}
 
 @media (min-width: 900px) {}
