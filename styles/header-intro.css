@@ -7,6 +7,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0%;
+    line-height: 69.6px;
+    
 }
 .header__intro-text {
     font-family: 'Lato', sans-serif;
@@ -16,6 +18,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0%;
+    line-height: 30px;
  
 }
 .header__intro-sub-text {
@@ -26,4 +29,5 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0%;
+    line-height: 25.5px;
 }
