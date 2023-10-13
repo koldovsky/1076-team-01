@@ -1,19 +1,29 @@
-.header__intro__title {
+.header__intro-title {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Prata', serif;
-    color: #fff;
+    color: var(--light-color);
     text-align: center;
     font-size: 58px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
 }
 .header__intro-text {
     font-family: 'Lato', sans-serif;
-    color: #fff5eb;
+    color: var(--text-warm-light);
     font-size: 20px;
     text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+ 
 }
 .header__intro-sub-text {
     font-family: 'Lato', sans-serif;
-    color: #fff5eb;
+    color: var(--text-warm-light);
     font-size: 17px;
     text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
 }
