@@ -33,7 +33,18 @@
   font-size: 14px;
 }
 
+.footer__nav,
+.footer__rights {
+  min-width: 100%;
+}
+
 @media (min-width: 320px) {
+
+  .footer__logo a,
+  img {
+    display: block;
+    margin: 0 auto;
+  }
 
   .footer__schedule-item,
   .footer__link-element,
@@ -57,8 +68,12 @@
     gap: 16px;
     margin-bottom: 30px;
   }
+
+  .footer__rights {
+    margin-bottom: 30px;
+  }
 }
 
-@media (min-width: 700px) {}
+@media (min-width: 767px) {}
 
 @media (min-width: 900px) {}
