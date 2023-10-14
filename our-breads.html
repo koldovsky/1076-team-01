@@ -20,13 +20,18 @@
     </header>
     <main class="main">
         <section data-include="bread-philosophy.partial.html"></section>
-        <section>
+        <section class="our-bread__block">
             <h2 class="featured__title">Our Breads</h2> 
             <div data-include="featured.partial.html"></div>
         </section>
         <section data-include="for-wholesales-buyers.partial.html"></section>
     </main>
-    <footer class="footer" data-include="footer.partial.html"></footer>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__wrap" data-include="footer.partial.html">
+            </div>
+        </div>
+    </footer>
     <script type="module" src="./js/index.js"></script>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </body>
