@@ -2,6 +2,7 @@
     font-size: 17px;
     line-height: 1.5;
     color: var(--dark-text-accent);
+    background: var(--light-color);
     padding: 90px 0;
 }
 
