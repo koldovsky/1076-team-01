@@ -1,0 +1,10 @@
+.process__title {
+    color: var(--text-dark);
+    font-size: 30px;
+    font-family: 'Prata', serif;
+    text-align: center;
+}
+.process__container img {
+    display: block;
+    width: 100%;         
+}

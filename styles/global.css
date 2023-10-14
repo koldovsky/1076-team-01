@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 /* Our fonts:
     font-family: 'Lato', sans-serif;
     font-family: 'Prata', serif; */
@@ -15,6 +16,8 @@
     --text-warm-light: #fff5eb;
     --text-cold-light: #626060;
     --text-menu-light: #b9aea7;
+    --dark-text-accent: #706e6e;
+    --light-text-accent: #ffffffdb;
     --text-description-accent: #684f40;
     --text-address-light: #706e6e;
     --subtitle-menu-light: #fff5eb;
@@ -26,9 +29,14 @@
     --btn-outline-light: #fff;
     --btn-primary-hover: #ff8542;
     --btn-outline-hover: #e1a455;
+    --light-link-header: #ffffffd4;
     --light-link-hover: #684f40;
     --input-background: #e5e5e5;
     --background-dark: #27292b;
+    --border-contact-form-light: #83b3db;
+    --border-contact-form-dark: #84ADCB;
+    --our-bread-text-description: rgb(112,110,110);
+
     /* --font-lato-sans-serif: "Lato", sans-serif; */
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
@@ -45,7 +53,7 @@ img {
 
 .container {
     max-width: 1200px;
-    padding: 0 20px;
+    padding: 0 24px;
     margin: auto;
 }
 
@@ -59,10 +67,12 @@ a {
 
 .btn-primary {
     font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.4px;
     border: none;
     border-radius: 35px;
     background: var(--btn-primary);
-    padding: 7px 27px;
+    padding: 8px 27px;
     transition: background 0.5s ease;
 }
 
@@ -93,4 +103,26 @@ a {
 
 .header__background--dark {
     background: var(--background-dark);
+}
+
+.footer{
+    background-color: var(--background-dark);
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 32px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 15px;
+    }
 }

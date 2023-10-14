@@ -1,0 +1,40 @@
+.header__intro {
+display: block;
+flex-basis: 100%;
+padding-bottom: 90px;
+padding-top: 130px;
+min-width: 320px;
+font-size: 17px;
+font-weight: 400;
+}
+.header__intro-content{
+    padding-top: 40px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 100%;
+    font-size: 17px;
+    font-weight: 400;
+}
+.header__intro-title {
+    display: inline;
+    height: auto;
+    width: auto;
+    font-family: 'Prata', serif;
+    color: var(--light-color);
+    font-size: 58px;
+    font-stretch: 100%;
+    font-weight: 400;
+    line-height: 69.6px;
+}
+.header__intro-text {
+    color: var(--text-warm-light);
+    font-size: 20px;
+    line-height: 30px;
+}
+.header__intro-sub-text {
+    color: var(--text-warm-light);
+    font-size: 17px;
+    line-height: 25.5px;
+}
