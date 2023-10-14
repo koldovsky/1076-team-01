@@ -1,4 +1,5 @@
 @import url(global.css);
+/*  */
 .footer {
   background-color: var(--background-dark);
   color: #fff;
@@ -8,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   padding: 90px 15px 30px;
+ 
 }
 .footer__divider {
   border-top: solid 1px var(--text-cold-light);
@@ -17,5 +19,19 @@
 }
 .footer__schedule{
     margin-top: 30px;
+    line-height: 1.5;
 }
-@media (min-width: 1200px){}
+.footer__link-items{
+  display: flex;
+  align-items: flex-start;
+}
+.footer__link-item{
+  cursor: pointer;
+  transition: color 0.7s ease;
+}
+.footer__link-item:hover{
+  color: #e1a455;
+}
+.footer__smm-icons{
+  display: flex;
+}
