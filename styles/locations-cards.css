@@ -1,68 +1,74 @@
-@import url(global.css);
-@import url(header-nav.css);
-
 .locations__title {
-    font-family: Prata, serif;
-    font-size: 30px;
-    font-weight: 200;
-    color: var(--text-dark);
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
-    padding-top: 100px;
+  font-family: Prata, serif;
+  font-size: 30px;
+  font-weight: 200;
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 100px;
 }
-
-
 /* Стилі для контейнера*/
 .locations__cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 70px;
-    padding-bottom: 90px;
-
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 70px;
+  padding-bottom: 90px;
 }
-
 /* Стилі для карток (контейнер в контейнері) */
 .locations__card {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 20px;
-    place-items: center;
-    /* Центрує всі елементи контейнера */
-
-
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+  place-items: center; /* Центрує всі елементи контейнера */
 }
-
 .locations__card-title {
-    font-family: Prata, serif;
-    font-size: 22px;
-    font-weight: 100;
-    color: var(--text-dark);
+  font-family: Prata, serif;
+  font-size: 22px;
+  font-weight: 100;
+  color: var(--text-dark);
 }
-
 .locations__card-address {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-content: center;
-    font-family: Lato, serif;
-    font-size: 17px;
-    color: var(--text-address-light);
-    text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+  font-family: Lato, serif;
+  font-size: 17px;
+  color: var(--text-address-light);
+  text-align: center;
 }
-
 .locations__card-contact {
-    font-family: Lato, serif;
-    font-size: 17px;
-    color: var(--text-dark);
-    text-decoration: underline;
+  font-family: Lato, serif;
+  font-size: 17px;
+  color: var(--text-dark);
+  text-decoration: underline;
+}
+.locations__card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding-bottom: 20px;
+  aspect-ratio: 6/4;
+  object-position: 0% 75%;
 }
 
-.locations__card-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    padding-bottom: 20px;
-    aspect-ratio: 6/4;
-    object-position: 0% 75%;
+@media (min-width: 768px) {
+  .locations__cards {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+  .locations__title {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 992px) {
+  .locations__cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+  .locations__title {
+    font-size: 36px;
+  }
 }
