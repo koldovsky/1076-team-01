@@ -8,7 +8,6 @@
 }
 
 .header__intro-content {
-    padding: 35px 25px;
     display: flex;
     flex-direction: column;
 }
@@ -19,7 +18,7 @@
     font-size: 58px;
     font-weight: 400;
     text-align: center;
-    line-height: 69.6px;
+    line-height: 1.2;
 }
 
 .header__intro-text {
