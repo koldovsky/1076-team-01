@@ -6,11 +6,13 @@
     font-size: 17px;
     font-weight: 400;
 }
+
 .header__intro-content {
     padding: 35px 25px;
     display: flex;
     flex-direction: column;
 }
+
 .header__intro-title {
     font-family: 'Prata', serif;
     color: var(--light-color);
@@ -19,17 +21,41 @@
     text-align: center;
     line-height: 69.6px;
 }
+
 .header__intro-text {
     color: var(--text-warm-light);
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 35px 0 25px;
 }
+
 .header__intro-sub-text {
     color: var(--text-warm-light);
     font-size: 17px;
     line-height: 25.5px;
     text-align: center;
+}
+
+@media(min-width: 768px) {
+    .header__intro-title {
+        font-size: 70px;
+    }
+
+    .header__intro-text {
+        font-size: 20px;
+        padding: 30px 0 45px;
+    }
+}
+
+@media(min-width: 992px) {
+    .header__intro-title {
+        font-size: 82px;
+    }
+
+    .header__intro-text {
+        font-size: 20px;
+        padding: 40px 0 45px;
+    }
+
 }
