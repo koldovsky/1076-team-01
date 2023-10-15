@@ -37,6 +37,10 @@
 }
 
 @media(min-width: 768px) {
+    .header__intro {
+        padding: 190px 0 157px;
+    }
+
     .header__intro-title {
         font-size: 70px;
     }
@@ -48,6 +52,10 @@
 }
 
 @media(min-width: 992px) {
+    .header__intro {
+        padding: 250px 0 185px;
+    }
+
     .header__intro-title {
         font-size: 82px;
     }
