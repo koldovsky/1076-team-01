@@ -1,21 +1,18 @@
 .header__intro {
-display: block;
-flex-basis: 100%;
-padding-bottom: 90px;
-padding-top: 130px;
-min-width: 320px;
-font-size: 17px;
-font-weight: 400;
+    display: block;
+    flex-basis: 100%;
+    padding-bottom: 135px;
+    padding-top: 250px;
+    min-width: 320px;
+    font-size: 17px;
+    font-weight: 400;
 }
-.header__intro-content{
-    padding-top: 40px;
-    padding-bottom: 24px;
+.header__intro-content {
+    padding: 0px 15px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     max-width: 100%;
-    font-size: 17px;
-    font-weight: 400;
 }
 .header__intro-title {
     display: inline;
@@ -26,15 +23,20 @@ font-weight: 400;
     font-size: 58px;
     font-stretch: 100%;
     font-weight: 400;
+    text-align: center;
     line-height: 69.6px;
 }
 .header__intro-text {
     color: var(--text-warm-light);
     font-size: 20px;
     line-height: 30px;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .header__intro-sub-text {
     color: var(--text-warm-light);
     font-size: 17px;
     line-height: 25.5px;
+    text-align: center;
 }
