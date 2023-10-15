@@ -15,7 +15,6 @@
 
 .recipes-breads__title {
     font-family: 'Prata', serif;
-    font-size: 30px;
     line-height: 1.3;
     color: var(--text-dark);
     text-align: center;
@@ -55,7 +54,7 @@
     .hero-recipes {
         min-width: 100%;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1px);
+        grid-template-rows: repeat(2, 1fr);
         gap: 30px;
     }
 
@@ -88,4 +87,23 @@
         object-fit: cover;
         object-position: top;
     }    
+}
+
+.recipes-breads__link {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.recipe__button{
+    font-size: 14px;
+    width: 143.212px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: 2px solid #684f40;
+    color:#684f40
+}
+
+.recipe__button:hover {
+    color: #e1a455;
+    border-color: #e1a455; 
 }
