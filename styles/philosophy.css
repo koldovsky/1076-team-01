@@ -1,0 +1,69 @@
+.philosophy {
+    background-image: linear-gradient(to left,#2526288c, #0f1012), url(../img/background-bread-philosophy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    padding: 133px 0;
+    color: var(--light-color);
+    text-align: left; 
+}
+.philosophy__title {
+    font-family: 'Prata', serif;
+    margin-bottom: 45px;
+    line-height: 150%;
+}
+.philosophy-description__container {
+        font-family: 'Lato', serif;
+}
+.philosophy__content {
+    max-width: 90%;
+    line-height: 150%;
+}
+@media (min-width: 320px) {
+
+    .philosophy__title{
+        font-size: 30px;
+        width: 100%;
+    }
+    .philosophy-description__container {
+        font-size: 17px; 
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .philosophy__title {
+        font-size: 30px;
+        width: 40%;
+    }
+    .philosophy-description__container {
+        font-size: 17px;
+        width: 40%;
+    }
+}
+@media (min-width: 992px) {
+    .philosophy__title{
+        font-size: 36px;
+        width: 40%;
+    }
+    .philosophy-description__container {
+        font-size: 17px;
+        box-sizing: border-box;
+        width: 45%;
+    }
+}
+@media (min-width: 1200px) {
+    .philosophy__content {
+        padding-left: 43px;
+    }
+    .philosophy__title {
+        display: block;
+        font-size: 36px;
+        width: 50%;
+    }
+    .philosophy-description__container {
+        font-size: 17px;
+        box-sizing: border-box;
+        width: 45%;   
+    }
+}

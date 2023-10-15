@@ -1,0 +1,35 @@
+.process__title {
+    color: var(--text-dark);
+    font-family: 'Prata', serif;
+    text-align: center;
+}
+.process__container {
+    padding: 20px 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+.process__container img {
+    display: block;
+    width: 100%;      
+}
+@media (min-width: 320px) {
+    .process__title {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 768px) {
+    .process__title {
+        font-size: 33px;
+    }
+}
+@media (min-width: 992px) {
+    .process__title {
+        font-size: 36px;
+    }
+}
+@media (min-width: 1200px) {
+    .process__title {
+        font-size: 36px; 
+    } 
+}

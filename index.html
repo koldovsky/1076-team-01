@@ -15,18 +15,18 @@
         <div class="header__background">
             <div class="header__container container">
                 <nav data-include="header-nav.partial.html"></nav>
-                <section data-include="header-intro.partial.html"></section>
+                <section data-include="index.header-intro.partial.html"></section>
             </div>
         </div>
     </header>
     <main class="main">
         <section data-include="index.handcrafted.partial.html"></section>
-        <section>
-            <h2>Featured Breads</h2> 
+        <section class="featured__block">
+            <h2 class="featured__title">Featured Breads</h2>
             <div data-include="featured.partial.html"></div>
         </section>
-         <!-- Menu -->
-         <!-- Не видалайте нічого! Та завжди перевіряйте наявність та послідовність ваших блоків -->
+        <!-- Menu -->
+        <!-- Не видалайте нічого! Та завжди перевіряйте наявність та послідовність ваших блоків -->
         <section data-include="index.about-us.partial.html"></section>
         <section data-include="philosophy.partial.html"></section>
         <section data-include="index.process.partial.html"></section>
@@ -34,7 +34,13 @@
         <section data-include="for-wholesales-buyers.partial.html"></section>
         <section data-include="locations-cards.partial.html"></section>
     </main>
-    <footer class="footer" data-include="footer.partial.html"></footer>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__wrap" data-include="footer.partial.html">
+            </div>
+        </div>
+    </footer>
     <script type="module" src="./js/index.js"></script>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </body>

@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/bread_shorticon.png" type="image/png" />
+    <link rel="stylesheet" href="styles/careers-page.css" />
+    <title>Careers Page| Bakery</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="img/bread_shorticon.png" type="image/png" />
-  <link rel="stylesheet" href="styles/careers.css">
-  <title>Careers Page| Bakery</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header__background--dark">
-      <div class="header__container container">
-        <nav data-include="header-nav.partial.html"></nav>
-      </div>
-    </div>
-    <div data-include="careers.header-banner.partial.html"></div>
-  </header>
-  <main class="career">
-    <section class="career__info" id="career__info">
-      <div class="container career__new-stuff">
-        <div class="career__new-stuff-left">
-          <h3 class="career__new-stuff-title">
-            We are currently hiring new staff for our busy season:
-          </h3>
-          <ul class="career__new-stuff-vacancies">
-            <li>- Barista, Café Server/ Customer Service</li>
-            <li>- Baker/Cake Decorator</li>
-            <li>- Accounting Clerk</li>
-            <li>- Retail Baker</li>
-            <li>- Delivery Driver</li>
-          </ul>
-          <button class="btn">Apply now</button>
-        </div>
-        <div class="career__new-stuff-right">
-          <img src="img/career-info-image.jpg" alt="Career baker" />
+  <body>
+    <header class="header">
+      <div class="header__background--dark">
+        <div class="header__container container">
+          <nav data-include="header-nav.partial.html"></nav>
         </div>
       </div>
-    </section>
-  </main>
-  <footer class="footer" data-include="footer.partial.html"></footer>
-  <script type="module" src="./js/index.js"></script>
-  <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
-</body>
-
+      <div data-include="careers.header-banner.partial.html"></div>
+    </header>
+    <main class="career">
+      <section class="career__info" id="career__info">
+        <div class="container">
+          <div class="career__vacancies">
+            <div class="career__new-stuff-left">
+              <h3 class="career__new-stuff-title">
+                We are currently hiring new staff for our busy season:
+              </h3>
+              <ul class="career__new-stuff-vacancies">
+                <li>- Barista, Café Server/ Customer Service</li>
+                <li>- Baker/Cake Decorator</li>
+                <li>- Accounting Clerk</li>
+                <li>- Retail Baker</li>
+                <li>- Delivery Driver</li>
+              </ul>
+              <div class="button-wrapper">
+                <button class="btn-light">Apply now</button>
+              </div>
+            </div>
+            <div class="career__new-stuff-right">
+              <img src="img/career-info-image.jpg" alt="Career baker" class="new-stuff-illustration"/>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+          <div class="footer__wrap" data-include="footer.partial.html">
+          </div>
+      </div>
+  </footer>
+    <script type="module" src="./js/index.js"></script>
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+  </body>
 </html>

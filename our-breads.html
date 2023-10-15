@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Breads Page | Bakery</title>
     <link rel="shortcut icon" href="img/bread_shorticon.png" type="image/png">
-    <link rel="stylesheet" href="styles/our-breads.css">
+    <link rel="stylesheet" href="styles/our-breads-page.css">
 </head>
 
 <body>
@@ -20,13 +20,18 @@
     </header>
     <main class="main">
         <section data-include="bread-philosophy.partial.html"></section>
-        <section>
-            <h2>Our Breads</h2> 
+        <section class="our-bread__block">
+            <h2 class="featured__title">Our Breads</h2> 
             <div data-include="featured.partial.html"></div>
         </section>
         <section data-include="for-wholesales-buyers.partial.html"></section>
     </main>
-    <footer class="footer" data-include="footer.partial.html"></footer>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__wrap" data-include="footer.partial.html">
+            </div>
+        </div>
+    </footer>
     <script type="module" src="./js/index.js"></script>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </body>

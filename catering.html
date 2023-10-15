@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catering Page | Bakery</title>
     <link rel="shortcut icon" href="img/bread_shorticon.png" type="image/png">
-    <link rel="stylesheet" href="styles/catering.css">
+    <link rel="stylesheet" href="styles/catering-page.css">
 </head>
 
 <body>
@@ -24,8 +24,12 @@
         <section data-include="catering.catering-content.partial.html"></section>
         <section data-include="catering.catering-options.partial.html"></section>
     </main>
-
-    <footer class="footer" data-include="footer.partial.html"></footer>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__wrap" data-include="footer.partial.html">
+            </div>
+        </div>
+    </footer>
     <script type="module" src="./js/index.js"></script>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </body>

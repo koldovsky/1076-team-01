@@ -1,0 +1,35 @@
+.header__intro {
+    display: block;
+    flex-basis: 100%;
+    padding: 130px 0 135px;
+    min-width: 320px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.header__intro-content {
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+}
+.header__intro-title {
+    font-family: 'Prata', serif;
+    color: var(--light-color);
+    font-size: 58px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 69.6px;
+}
+.header__intro-text {
+    color: var(--text-warm-light);
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.header__intro-sub-text {
+    color: var(--text-warm-light);
+    font-size: 17px;
+    line-height: 25.5px;
+    text-align: center;
+}
