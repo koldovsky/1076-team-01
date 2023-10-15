@@ -7,7 +7,6 @@
     padding: 20px 10px;
     max-width: 1200px;
     margin: auto;
-
 }
 .process__container img {
     display: block;
@@ -16,13 +15,12 @@
 @media (min-width: 320px) {
     .process__title {
         font-size: 30px;
-        margin-bottom: 45px;
+        margin-bottom: 10px;
     }
 }
 @media (min-width: 768px) {
     .process__title {
         font-size: 33px;
-    
     }
 }
 @media (min-width: 992px) {
