@@ -1,7 +1,7 @@
 
 @media (min-width: 320px) {
     .handcrafted{
-        background: linear-gradient(to top, rgba(39, 41, 43, 0.5), rgba(39, 41, 43, 0.5)), url("../img/handcrafted-bg.jpg");
+        background: url("../img/handcrafted-bg.jpg");
         background-attachment: fixed;
         background-position: 20%;
         background-size: cover;
