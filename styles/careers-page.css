@@ -7,7 +7,7 @@
     background-image: linear-gradient(90deg, rgb(15,16,17) 0%, rgb(15,16,17, 0.25) 100%), url("../img/carrers-banner-bg.webp");
     background-attachment: fixed;
     background-repeat: no-repeat; 
-    background-position-y: -10rem;
+    /* background-position-y: -10rem; */
     background-size: cover;
 }
 .header__banner-left-section{
@@ -158,6 +158,15 @@
     }
     .career__new-stuff-vacancies{
         margin-bottom: 35px;
+    }
+    .header__banner-wrapper{
+        background-position-y: -2.3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header__banner-wrapper{
+        background-position-y: -3.5rem;
     }
 }
 
