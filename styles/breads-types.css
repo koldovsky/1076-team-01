@@ -1,9 +1,9 @@
 .featured__block {
-    padding: 90px 90px;
+    padding: 90px 0;
 }
 
 .our-bread__block {
-    padding: 90px 90px;
+    padding: 90px 0;
 }
 
 .our-bread__block .type__description {
@@ -28,6 +28,7 @@
     display:flex;
     flex-direction: column;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .type__image {
@@ -57,11 +58,11 @@
 
 @media (min-width: 768px) {
     .featured__block {
-        padding: 90px 95px;
+        padding: 90px 0 95px;
     }
     
     .our-bread__block {
-        padding: 90px 95px;
+        padding: 90px 0 95px;
     }
     
     .featured__types {
@@ -71,11 +72,11 @@
 
 @media (min-width: 992px) {
     .featured__block {
-        padding: 90px 100px;
+        padding: 90px 0 100px;
     }
     
     .our-bread__block {
-        padding: 90px 100px;
+        padding: 90px 0 100px;
     }
     
     .featured__types {
