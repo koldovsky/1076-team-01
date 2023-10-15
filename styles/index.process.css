@@ -1,11 +1,13 @@
 .process__title {
     color: var(--text-dark);
-    font-size: 30px;
     font-family: 'Prata', serif;
     text-align: center;
 }
 .process__container {
-    padding: 30px;
+    padding: 90px 24px;
+    max-width: 1200px;
+    margin: auto;
+
 }
 .process__container img {
     display: block;
@@ -13,49 +15,26 @@
 }
 @media (min-width: 320px) {
     .process__title {
-        padding-top: 30px;
-    }
-    .process__container img {
-        display: block;
-        width: 100%;
-        padding-bottom: 90px;
+        font-size: 30px;
+        margin-bottom: 45px;
     }
 }
 @media (min-width: 768px) {
     .process__title {
         font-size: 33px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .process__container img {
-        display: block;
-        width: 100%;
-        padding-bottom: 90px;
+    
     }
 }
 @media (min-width: 992px) {
     .process__title {
-        color: var(--text-dark);
-        font-size: 33px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .process__container img {
-        display: block;
-        width: 100%;
-        padding-bottom: 90px;
+        font-size: 36px;
+        
+    
     }
 }
 @media (min-width: 1200px) {
     .process__title {
-        color: var(--text-dark);
-        font-size: 33px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .process__container img {
-        display: block;
-        width: 100%;
-        padding-bottom: 90px;
-    }
+        font-size: 36px;
+        
+    } 
 }
