@@ -28,6 +28,10 @@
     --light-link-hover: #684f40;
     --input-background: #e5e5e5;
     --background-dark: #27292b;
+    --about-us-header-text: #27292b;
+    --about-us-header-paragraph: #626060;
+    --about-us-link-border: #684f40;
+    --about-us-link-text: #684f40;
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
 }
