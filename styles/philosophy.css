@@ -1,11 +1,12 @@
 .philosophy {
-    background-image: url(../img/background-bread-philosophy.jpg);
+    background-image: linear-gradient(to left,#2526288c, #0f1012), url(../img/background-bread-philosophy.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50% 20%;
     padding: 50px 40px;
     color: var(--light-color);
     text-align: left;
-    font-family: 'Lato', sans-serif;  
+    font-family: 'Lato', sans-serif; 
 }
 .philosophy__title {
     font-family: 'Prata', serif;
@@ -13,57 +14,59 @@
     font-size: 30px;
     margin-bottom: 45px;
 }
-
+@media (min-width: 320px) {
+    .philosophy__title{
+        font-weight: 30px;
+        font-family: 'Prata', serif;
+    }
+    .philosophy-description__container {
+        font-family: sans-serif;
+        font-size: 17px; 
+        box-sizing: border-box;
+        width: 200px;
+    }
+}
 @media (min-width: 768px) {
     .philosophy__title {
         margin-top: 50px;
-        margin-left: 10px;
         font-weight: bold;
         font-family: 'Prata', serif;
-        width: 300px;
+        width: 400px;
     }
-    .philosophy__description {
-        margin-top: 27px;
-        margin-bottom: 50px;
-        margin-left: 10px;
+    .philosophy-description__container {
         font-family: sans-serif;
         font-size: 15px;
-        width: 300px;
+        width: 600px;
     }
 }
 @media (min-width: 992px) {
     .philosophy__title{
         margin-top: 50px;
-        margin-left: 100px;
+        margin-left: 50px;
         font-weight: bold;
         font-family: 'Prata', serif;
         width: 200px;
     }
-    .philosophy__description {
-        margin-top: 27px;
-        margin-bottom: 50px;
-        margin-left: 100px;
+    .philosophy-description__container {
+        margin-left: 50px;
         font-family: sans-serif;
         font-size: 15px;
         box-sizing: border-box;
-        width: 400px;
+        width: 300px;
     }
 }
 @media (min-width: 1200px) {
     .philosophy__title {
-        display: block;margin-top: 50px;
-        margin-left: 300px;
+        display: block;
+        margin-top: 50px;
         font-weight: bold;
         font-family: 'Prata', serif;
-        width: 300px;
+        width: 400px;
     }
-    .philosophy__description {
-        margin-top: 27px;
-        margin-bottom: 50px;
-        margin-left: 250px;
+    .philosophy-description__container {
         font-family: sans-serif;
         font-size: 15px;
         box-sizing: border-box;
-        width: 450px;
+        width: 400px;
     }
 }
