@@ -4,7 +4,7 @@
     text-align: center;
 }
 .process__container {
-    padding: 90px 24px;
+    padding: 40px 24px;
     max-width: 1200px;
     margin: auto;
 
@@ -28,13 +28,10 @@
 @media (min-width: 992px) {
     .process__title {
         font-size: 36px;
-        
-    
     }
 }
 @media (min-width: 1200px) {
     .process__title {
-        font-size: 36px;
-        
+        font-size: 36px; 
     } 
 }
