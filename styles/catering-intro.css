@@ -63,7 +63,7 @@
 
 @supports (-webkit-touch-callout : none) {
     .catering-intro {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
 }
 
