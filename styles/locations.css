@@ -9,7 +9,6 @@
 .contactform {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/locations-background.jpeg);
     background-size: cover;
-    background-attachment: fixed;
     background-position: center center;
     padding: 90px 0;
 }
@@ -101,5 +100,17 @@
     .contactform .contactform__container {
         margin: 1em auto 2em;
         padding: 40px;
+    }
+}
+
+@supports (-webkit-touch-callout : none) {
+    .contactform {
+        background-attachment: scroll;
+    }
+}
+
+@supports not (-webkit-touch-callout : none) {
+    .contactform {
+        background-attachment: fixed;
     }
 }
