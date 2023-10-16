@@ -23,7 +23,7 @@ hr {
 }
 
 .handcrafted {
-    background: linear-gradient(to top, rgba(39, 41, 43, 0.7), rgba(39, 41, 43, 0.7)), url("../img/handcrafted-bg.jpg");
+    background: linear-gradient(to top, rgba(39, 41, 43, 0.7), rgba(39, 41, 43, 0.7)), url("../img/ha");
     background-attachment: fixed;
     background-position: 20%;
     background-size: cover;
