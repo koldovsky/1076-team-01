@@ -40,6 +40,7 @@
     --border-contact-form-light: #83b3db;
     --border-contact-form-dark: #84ADCB;
     --our-bread-text-description: rgb(112,110,110);
+    --backgroung-contact-form: rgba(0, 0, 0, 0.6);
 
     /* --font-lato-sans-serif: "Lato", sans-serif; */
     font-family: 'Lato', sans-serif;
