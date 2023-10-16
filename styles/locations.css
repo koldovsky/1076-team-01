@@ -7,7 +7,8 @@
 }
 
 .contactform {
-    background: linear-gradient(var(--backgroung-contact-form), var(--backgroung-contact-form)),
+    background: linear-gradient(var(--backgroung-contact-form),
+            var(--backgroung-contact-form)),
         url(../img/locations-background.jpeg);
     background-size: cover;
     background-position: center center;
