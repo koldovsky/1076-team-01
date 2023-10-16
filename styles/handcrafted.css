@@ -1,6 +1,29 @@
+
+.handcrafted__title--line {
+    display: block;
+    height: 1px;
+    width: 30%;
+    background-color: #ff8542;
+    flex-grow: 1;
+}
+
+.handcrafted__title-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+hr{
+    height: 1px;
+    background-color: var(--text-variant-grey);
+    border: none;
+}
 @media (min-width: 320px) {
     .handcrafted {
-        background: linear-gradient(to top, rgba(39, 41, 43, 0.7), rgba(39, 41, 43, 0.7)), url("../img/handcrafted-bg.jpg");
+        background: linear-gradient(to top, rgba(39, 41, 43, 0.7), rgba(39, 41, 43, 0.7)), url("img/handcraft-background.jpg");
         background-attachment: fixed;
         background-position: 20%;
         background-size: cover;
@@ -11,9 +34,8 @@
 
     .handcrafted__title {
         font-family: 'Prata', serif;
-        font-weight: 200;
-        font-size: 33px;
-        margin-bottom: 50px;
+        font-weight: 400;
+        font-size: 36px;
         color: var(--light-color);
     }
 
@@ -22,12 +44,12 @@
         color: var(--light-color);
         font-family: 'Lato', serif;
         font-size: 20px;
+        line-height: 30px;
     }
 
     .handcrafted__wrap {
         border-bottom: 1px solid var(--text-variant-grey);
         margin: 0 auto;
-
     }
 }
 
