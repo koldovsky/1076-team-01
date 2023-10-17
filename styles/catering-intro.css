@@ -1,8 +1,8 @@
 .catering-intro {
-    background: linear-gradient(90deg, rgb(16 16 16) 0%, rgb(11 10 10 / 25%) 100%), url(../img/catering-intro-background.jpg) no-repeat fixed;
-    background-position: 20% center;
+    background-image: linear-gradient(90deg, rgb(16 16 16) 0%, rgb(11 10 10 / 25%) 100%), url(../img/catering-intro-background.jpg);
+    background-position: 20%;
+    background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Lato', sans-serif; 
     letter-spacing: 0px; 
     line-height: 1.5; 
     font-size: 17px; 
@@ -53,10 +53,22 @@
 
 @media (min-width: 1200px) {
     .catering-intro {
-        background-position: 0% 37%;
+        background-position: 0% 36.5%;
     }
     
     .catering-intro__content {
         max-width: 680px;
+    }
+}
+
+@supports (-webkit-touch-callout : none) {
+    .catering-intro {
+        background-attachment: scroll;
+    }
+}
+
+@supports not (-webkit-touch-callout : none) {
+    .catering-intro {
+        background-attachment: fixed;
     }
 }
