@@ -24,7 +24,6 @@ hr {
 
 .handcrafted {
     background: linear-gradient(to top, rgba(39, 41, 43, 0.7), rgba(39, 41, 43, 0.7)), url("../img/handcrafted-bg.jpg");
-    background-attachment: fixed;
     background-position: 20%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -75,5 +74,17 @@ hr {
 
     .handcrafted__text {
         margin: 0 25px 30px;
+    }
+}
+
+@supports ( -webkit-touch-callout : none) {
+    .handcrafted {
+         background-attachment:scroll;
+    }
+}
+
+@supports not ( -webkit-touch-callout : none) {
+    .handcrafted {
+         background-attachment: fixed;
     }
 }
