@@ -50,9 +50,9 @@ const options = [
 ]
 
 function renderCatering(items) {
-    let itemsDomStting = "";
+    let itemsDomString = "";
     items.forEach(item => {
-        itemsDomStting += `
+        itemsDomString += `
         <li class="catering__item">
             <div class="catering__item-visual">
                 <img class="catering__${item.category}" src="${item.img}" alt="${item.title}">
@@ -61,7 +61,7 @@ function renderCatering(items) {
         </li>`
     });
     const cateringList = document.querySelector(".catering__list");
-    cateringList.insertAdjacentHTML("beforeend", itemsDomStting);
+    cateringList.insertAdjacentHTML("beforeend", itemsDomString);
 }
 
 renderCatering(options);
