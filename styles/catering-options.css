@@ -1,5 +1,5 @@
 .catering {
-    background: url("../img/catering-options-background.jpeg") center no-repeat;
+    background: url("../img/catering-options-background.jpeg") center no-repeat fixed;
     background-size: cover;
     font-family: 'Prata', serif;
     letter-spacing: 0px;
@@ -107,17 +107,5 @@ img.catering__specials {
     .catering__list {
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
-    }
-}
-
-@supports (-webkit-touch-callout : none) {
-    .catering {
-        background-attachment: scroll;
-    }
-}
-
-@supports not (-webkit-touch-callout : none) {
-    .catering {
-        background-attachment: fixed;
     }
 }
