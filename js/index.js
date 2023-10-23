@@ -1,3 +1,4 @@
-document.addEventListener('partialsLoaded', async () => {
-    await import('./header.js');
+document.addEventListener('partialsLoaded', () => {
+    import('./header.js');
+    import('./recipes-breads.js');
 });
