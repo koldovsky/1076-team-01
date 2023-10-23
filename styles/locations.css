@@ -53,9 +53,9 @@
     display: block;
 }
 
-.contactform #uname,
+.contactform #name,
 #umail,
-#umessage {
+#message {
     display: block;
     width: 100%;
     resize: none;
@@ -66,7 +66,7 @@
     border-color: var(--input-background);
     border-style: none;
     height: auto;
-    padding: 10px;
+    padding: 15px 15px 15px 35px;
     margin: 20px auto 20px;
 }
 
@@ -99,6 +99,30 @@
     text-align: center;
 }
 
+.form-control {
+    position: relative;
+}
+
+.form-control label {
+    display: block;
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: -18px;
+    left: 35px;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
 @media (min-width: 425px) {
     .contactform .contactform__container {
         margin: 1em auto;
@@ -110,6 +134,18 @@
     .contactform .contactform__container {
         margin: 1em auto 2em;
         padding: 40px;
+        min-width: 450px;
+        max-width: 650px;
+    }
+
+    .contactform .contactform__page-section {
+        padding: 80px;
+    }
+
+    .contactform #name,
+    #umail,
+    #message {
+        width: 400px;
     }
 }
 
