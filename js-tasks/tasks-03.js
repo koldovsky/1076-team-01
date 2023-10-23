@@ -30,7 +30,7 @@ function giveMeFive(obj) {
 // Understanding closures - the basics
 // https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
 const buildFun = count => {
-    let arrFuncs = [];
+    const arrFuncs = [];
     for (let i = 0; i < count; i++) {
         arrFuncs.push(() => i);
     }
