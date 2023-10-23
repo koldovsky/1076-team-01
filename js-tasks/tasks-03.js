@@ -13,14 +13,12 @@ const circleCircumference = circle => 2 * Math.PI * circle.radius;
 // Give Me Five
 // https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
 function giveMeFive(obj) {
-    const arrOfFive = [];
-
+    const fives = [];
     for (const key in obj) {
-        if (key.length === 5) arrOfFive.push(key);
-        if (obj[key].length === 5) arrOfFive.push(obj[key]);
+        if (key.length === 5) fives.push(key);
+        if (obj[key].length === 5) fives.push(obj[key]);
     }
-
-    return arrOfFive;
+    return fives;
 }
 
 //---------------------------------------------------------------------
@@ -30,11 +28,11 @@ function giveMeFive(obj) {
 // Understanding closures - the basics
 // https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
 const buildFun = count => {
-    const arrFuncs = [];
+    const funcs = [];
     for (let i = 0; i < count; i++) {
-        arrFuncs.push(() => i);
+        funcs.push(() => i);
     }
-    return arrFuncs;
+    return funcs;
 };
 
 // Animals and Inheritance
