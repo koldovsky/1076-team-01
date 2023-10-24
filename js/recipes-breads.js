@@ -10,6 +10,6 @@ function changeTitleText() {
   }
 }
 
-setInterval(changeTitleText, 2000);
+setInterval(changeTitleText, 3000);
 
 
