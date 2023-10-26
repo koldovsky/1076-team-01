@@ -3,6 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 20%;
+    background-attachment: fixed;
     padding: 133px 0;
     color: var(--light-color);
     text-align: left; 
