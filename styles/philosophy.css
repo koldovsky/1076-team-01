@@ -10,7 +10,7 @@
 }
 .philosophy__title {
     font-family: 'Prata', serif;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     line-height: 150%;
 }
 .philosophy-description__container {
@@ -31,6 +31,9 @@
         box-sizing: border-box;
         width: 100%;
     }
+    .philosophy__content {
+        padding: 40px;
+    }
 }
 @media (min-width: 768px) {
     .philosophy__title {
@@ -40,6 +43,9 @@
     .philosophy-description__container {
         font-size: 17px;
         width: 40%;
+    }
+    .philosophy__content {
+        padding: 40px;
     }
 }
 @media (min-width: 992px) {
@@ -51,6 +57,9 @@
         font-size: 17px;
         box-sizing: border-box;
         width: 45%;
+    }
+    .philosophy__content {
+        padding: 40px;
     }
 }
 @media (min-width: 1200px) {
@@ -66,6 +75,9 @@
         font-size: 17px;
         box-sizing: border-box;
         width: 50%;   
+    }
+    .philosophy__content {
+        padding: 60px;
     }
 }
 .process__title {
