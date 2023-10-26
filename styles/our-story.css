@@ -41,7 +41,6 @@ p {
         url(../img/dark-image-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 .gallery__container { 
     padding: 90px 0; 
@@ -108,7 +107,7 @@ p {
     object-position: 50% 40%;
 }
 
-@media(min-width: 375px) {
+@media (min-width: 375px) {
     .about-primary__img {
         padding: 0 24px;
     }
@@ -127,7 +126,7 @@ p {
     }
 }
 
-@media(min-width: 425px) {
+@media (min-width: 425px) {
     .about-primary__img {
         padding: 0 24px;
     }
@@ -146,7 +145,7 @@ p {
     }
 }
 
-@media(min-width:550px) {
+@media (min-width:550px) {
     .gallery__images img {
         height: 335px;
     }
@@ -155,7 +154,7 @@ p {
     }
 }
 
-@media(min-width:700px) {
+@media (min-width:700px) {
     .gallery__images img {
         height: 435px;
     }
@@ -164,7 +163,7 @@ p {
     }
 }
 
-@media(min-width:768px) {
+@media (min-width:768px) {
     .primary__container {
         padding: 95px 17px;
         display: flex;
@@ -220,7 +219,7 @@ p {
     }
 }
 
-@media(min-width: 900px) {
+@media (min-width: 900px) {
     .gallery__images img{
         height: 270px;
     }
@@ -276,7 +275,7 @@ p {
     }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
     .gallery__images img {
         height: 171px;
     } 
@@ -285,7 +284,7 @@ p {
     }
 }
 
-@media(min-width:1440px) {
+@media (min-width:1440px) {
     .primary__container {
         max-width: 1200px;
         margin: 0 auto;
@@ -309,5 +308,17 @@ p {
     }
     .about-story__img img {
         height: 592px;
+    }
+}
+
+@supports ( -webkit-touch-callout : none) {
+    .gallery {
+         background-attachment:scroll;
+    }
+}
+
+@supports not ( -webkit-touch-callout : none) {
+    .gallery {
+         background-attachment: fixed;
     }
 }

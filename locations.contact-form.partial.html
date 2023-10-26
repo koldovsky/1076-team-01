@@ -1,12 +1,18 @@
-<section id="write-us" class="form">
-    <div class="form__container container form__border">
-        <form action="?" method="post" class="form__page-section">
-            <h2 class="form__title">Write Us</h2>
-            <input type="text" name="name" id="uname" placeholder="Name*" minlength="3" maxlength="64" required>
-            <input type="email" name="email" id="umail" placeholder="Email*" minlength="5" maxlength="64" required>
-            <textarea name="message" id="umessage" placeholder="Message" minlength="10" cols="30" rows="10"
-                maxlength="2560" required></textarea>
-            <input type="submit" class="form__btn" value="SEND">
+<section id="write-us" class="contactform">
+    <div class="contactform__container container contactform__border">
+        <form action="https://formsubmit.co/your@email.com" method="POST" class="contactform__page-section" id="form">
+            <h2 class="contactform__title">Write Us</h2>
+            <div class="form-control">
+                <input type="text" name="name" id="name" placeholder="Name*" /><small>Error message</small>
+            </div>
+            <div class="form-control">
+                <input type="email" name="email" id="umail" placeholder="Email*" /><small>Error message</small>
+            </div>
+            <div class="form-control">
+                <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"
+                    maxlength="2560"></textarea><small>Error message</small>
+            </div>
+            <input type="submit" class="contactform__btn" value="SEND" />
         </form>
     </div>
 </section>
