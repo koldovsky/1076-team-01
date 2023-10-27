@@ -126,12 +126,6 @@ a {
     }
 }
 
-@media (min-width: 1200px) {
-    .container {
-        padding: 0 40px;
-    }
-}
-
 @media (min-width: 1400px) {
     .container {
         padding: 0 15px;
