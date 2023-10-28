@@ -79,12 +79,13 @@ hr {
 
 @supports ( -webkit-touch-callout : none) {
     .handcrafted {
-         background-attachment:scroll;
+        background-attachment:scroll;
     }
 }
 
 @supports not ( -webkit-touch-callout : none) {
     .handcrafted {
-         background-attachment: fixed;
+        background-attachment: fixed;
     }
 }
+

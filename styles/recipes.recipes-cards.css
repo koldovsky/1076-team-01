@@ -50,9 +50,18 @@
 }
 
 @media (min-width: 768px) {
+
+    .recipes-breads__recipes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
     /* TODO: add changes */
 }
 
 @media (min-width: 992px) {
+    .recipes-breads__recipes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
     /* TODO: add changes */
 }
