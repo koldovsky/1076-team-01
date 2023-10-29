@@ -32,6 +32,31 @@
     margin-top: 50px;
 }
 
+.about_us__clients {
+    margin-top: 25px;
+    margin: auto;
+}
+
+.clients__paragraph {
+    display: block;
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Lato', serif;
+    color: var(--about-us-header-paragraph);
+}
+
+.clients__count {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Lato', serif;
+    color: var(--about-us-header-paragraph);
+}
+
 .about_us__link {
     margin-top: 25px;
     padding-top: 7px;
@@ -49,7 +74,7 @@
     color: var(--about-us-link-text);
 }
 
-@media (min-width: 750px) {
+@media (min-width: 992px) {
     .about_us__images {
         flex-direction: row;
     }
