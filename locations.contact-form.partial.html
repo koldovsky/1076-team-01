@@ -1,6 +1,6 @@
 <section id="write-us" class="contactform">
     <div class="contactform__container container contactform__border">
-        <form action="https://formsubmit.co/your@email.com" method="POST" class="contactform__page-section" id="form">
+        <form action="https://formspree.io/f/xdorbpla" class="contactform__page-section" id="form">
             <h2 class="contactform__title">Write Us</h2>
             <div class="form-control">
                 <input type="text" name="name" id="name" placeholder="Name*" /><small>Error message</small>
@@ -12,7 +12,13 @@
                 <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"
                     maxlength="2560"></textarea><small>Error message</small>
             </div>
-            <input type="submit" class="contactform__btn" value="SEND" />
+            <div id="myProgress">
+                <div id="myBar">
+                    <input type="submit" class="contactform__btn" value="SEND" />
+                </div>
+            </div>
+            <div class="contactform__page-section-status"></div>
         </form>
+
     </div>
 </section>

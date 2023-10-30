@@ -45,6 +45,16 @@
     border-radius: 0px;
 }
 
+.contactform__page-section-status {
+    opacity: 0.5;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
 .contactform .contactform__page-section {
     padding: 20px 20px 0 20px;
     background-color: var(--light-color);
@@ -121,6 +131,16 @@
 
 .form-control.error small {
     visibility: visible;
+}
+
+.contactform .contactform__btn #myProgress {
+    width: 100%;
+}
+
+.contactform .contactform__btn #myBar {
+    width: 0%;
+    height: 30px;
+
 }
 
 @media (min-width: 425px) {
