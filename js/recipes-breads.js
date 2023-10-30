@@ -1,5 +1,5 @@
 const title = document.querySelector('.recipes-breads__title');
-const changeTitle = ['Recipes Using Our Breads', 'The best recipe',];
+const changeTitle = ['Recipes Using Our Breads', 'The best recipes Breads',];
 let currentIndex = 0;
 
 function changeTitleText() {
