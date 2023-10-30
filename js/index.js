@@ -4,4 +4,5 @@ document.addEventListener("partialsLoaded", () => {
   import("./about-us-our-clients.js");
   import("./handcrafted.js");
   import("./locations-cards.partial.js");
+  import("./featured-bread.js");
 });
