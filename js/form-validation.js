@@ -24,7 +24,7 @@ function checkEmail(input) {
     if (!isEmailValid) {
       showError(input, "Email is not valid");
     } else if (isRuDomain) {
-      showError(input, "Domains from the .ru segment are not supported");
+      showError(input, ".ru domains are restricted");
     }
   }
 }

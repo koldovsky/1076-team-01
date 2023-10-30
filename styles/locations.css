@@ -1,327 +1,469 @@
 .map iframe {
-    width: 100%;
-    height: 576px;
-    border: 0;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+  width: 100%;
+  height: 576px;
+  border: 0;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .contactform {
-    background: linear-gradient(var(--background-contact-form),
-            var(--background-contact-form)),
-        url(../img/locations-background.jpeg);
-    background-size: cover;
-    background-position: center center;
-    padding: 90px 0;
+  background: linear-gradient(var(--background-contact-form),
+      var(--background-contact-form)),
+    url(../img/locations-background.jpeg);
+  background-size: cover;
+  background-position: center center;
+  padding: 90px 0;
 }
 
 .contactform .contactform__container {
-    background-color: var(--light-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 150px;
-    max-width: 350px;
-    justify-content: space-between;
-    padding: 10px 10px;
-    margin: auto;
+  background-color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 150px;
+  max-width: 350px;
+  justify-content: space-between;
+  padding: 10px 10px;
+  margin: auto;
 }
 
 .contactform .contactform__border {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    background-image: repeating-linear-gradient(135deg,
-            var(--border-contact-form-light) 0px,
-            var(--border-contact-form-light) 30px,
-            transparent 30px,
-            transparent 50px,
-            var(--border-contact-form-light) 50px,
-            var(--border-contact-form-dark) 80px,
-            transparent 80px,
-            transparent 100px);
-    padding: 20px;
-    border: none;
-    border-radius: 0px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: repeating-linear-gradient(135deg,
+      var(--border-contact-form-light) 0px,
+      var(--border-contact-form-light) 30px,
+      transparent 30px,
+      transparent 50px,
+      var(--border-contact-form-light) 50px,
+      var(--border-contact-form-dark) 80px,
+      transparent 80px,
+      transparent 100px);
+  padding: 20px;
+  border: none;
+  border-radius: 0px;
 }
 
 .contactform__page-section-status {
-    opacity: 0.5;
-    text-align: center;
-    position: fixed;
-    top: 10px;  
-    right: 10px;  
-    z-index: 9999;
+  opacity: 0.5;
+  text-align: center;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
 }
 
 .contactform .contactform__page-section {
-    padding: 20px 20px 0 20px;
-    background-color: var(--light-color);
-    display: block;
-    position: relative;
-    display: block;
+  padding: 20px 20px 0 20px;
+  background-color: var(--light-color);
+  display: block;
+  position: relative;
+  display: block;
 }
 
 .contactform #name,
 #umail,
 #message {
-    display: block;
-    width: 100%;
-    resize: none;
-    font-size: 14px;
-    color: var(--input-text);
-    background-color: var(--input-background);
-    border-radius: 25px;
-    border-color: var(--input-background);
-    border-style: none;
-    height: auto;
-    padding: 15px 15px 15px 35px;
-    margin: 20px auto 20px;
+  display: block;
+  width: 100%;
+  resize: none;
+  font-size: 14px;
+  color: var(--input-text);
+  background-color: var(--input-background);
+  border-radius: 25px;
+  border-color: var(--input-background);
+  border-style: none;
+  height: auto;
+  padding: 15px 15px 15px 35px;
+  margin: 20px auto 20px;
 }
 
 .contactform .contactform__btn {
-    background-color: var(--btn-outline-hover);
-    border-radius: 35px;
-    font-size: 14px;
-    color: var(--light-color);
-    border-color: var(--btn-primary-hover);
-    border-style: none;
-    height: auto;
-    padding: 10px;
-    margin: 20px auto 20px;
-    width: 100%;
+  background-color: var(--btn-outline-hover);
+  border-radius: 35px;
+  font-size: 14px;
+  color: var(--light-color);
+  border-color: var(--btn-primary-hover);
+  border-style: none;
+  height: auto;
+  padding: 10px;
+  margin: 20px auto 20px;
+  width: 100%;
 }
 
 .contactform .contactform__btn:hover {
-    background-color: var(--btn-primary-hover);
-    border-color: var(--btn-outline-hover);
-    border-style: none;
-    cursor: pointer;
+  background-color: var(--btn-primary-hover);
+  border-color: var(--btn-outline-hover);
+  border-style: none;
+  cursor: pointer;
 }
 
 .contactform .contactform__title {
-    font-family: "Prata", serif;
-    color: var(--text-dark);
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 39px;
-    text-align: center;
+  font-family: "Prata", serif;
+  color: var(--text-dark);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 39px;
+  text-align: center;
 }
 
 .form-control {
-    position: relative;
+  position: relative;
 }
 
 .form-control label {
-    display: block;
+  display: block;
 }
 
 .form-control.error input {
-    border-color: var(--error-color);
+  border-color: var(--error-color);
 }
 
 .form-control small {
-    color: var(--error-color);
-    position: absolute;
-    bottom: -18px;
-    left: 35px;
-    visibility: hidden;
+  color: var(--error-color);
+  position: absolute;
+  bottom: -18px;
+  left: 35px;
+  visibility: hidden;
 }
 
 .form-control.error small {
-    visibility: visible;
+  visibility: visible;
 }
 
 .contactform .contactform__btn #myProgress {
-    width: 100%;
+  width: 100%;
 }
 
 .contactform .contactform__btn #myBar {
-    width: 0%;
-    height: 30px;
+  width: 0%;
+  height: 30px;
 }
 
 .error {
-    animation: shake1 0.4s ease-in-out 0s 2;
+  animation: shake1 0.4s ease-in-out 0s 2;
+}
+
+.input:invalid {
+  animation: shake1 0.4s ease-in-out 0s 2;
+}
+
+.toast {
+  position: fixed;
+  top: 25px;
+  right: 30px;
+  border-radius: 12px;
+  background: var(--light-color);
+  padding: 20px 35px 20px 25px;
+  box-shadow: 0 6px 20px -5px var(--error-color);
+  ;
+  overflow: hidden;
+  transform: translateX(calc(100% + 30px));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+  z-index: 9999;
+}
+
+.toast.active {
+  transform: translateX(0%);
+}
+
+.toast .toast-content {
+  display: flex;
+  align-items: center;
+}
+
+.toast-content .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-color);
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.toast-content .message {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.message .text {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--input-text);
+}
+
+.message .text.text-1 {
+  font-weight: 600;
+  color: var(--input-text);
+}
+
+.toast .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.toast .close:hover {
+  opacity: 1;
+}
+
+.toast .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+
+}
+
+.toast .progress:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--error-color);
+}
+
+.toast.active~button {
+  pointer-events: none;
+}
+
+.progress.active:before {
+  animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+  100% {
+    right: 100%;
   }
-  .input:invalid {
-    animation: shake1 0.4s ease-in-out 0s 2;
+}
+
+@keyframes shake1 {
+  0% {
+    margin-left: 0rem;
   }
 
-  @keyframes shake1 {
-    0% {
-      margin-left: 0rem;
-    }
-    25% {
-      margin-left: 0.5rem;
-    }
-    75% {
-      margin-left: -0.5rem;
-    }
-    100% {
-      margin-left: 0rem;
-    }
+  25% {
+    margin-left: 0.5rem;
   }
-  @keyframes shake2 {
-    0% {
-      transform: translate(1px, 1px) rotate(0deg);
-    }
-    10% {
-      transform: translate(-1px, -2px) rotate(-1deg);
-    }
-    20% {
-      transform: translate(-3px, 0px) rotate(1deg);
-    }
-    30% {
-      transform: translate(3px, 2px) rotate(0deg);
-    }
-    40% {
-      transform: translate(1px, -1px) rotate(1deg);
-    }
-    50% {
-      transform: translate(-1px, 2px) rotate(-1deg);
-    }
-    60% {
-      transform: translate(-3px, 1px) rotate(0deg);
-    }
-    70% {
-      transform: translate(3px, 1px) rotate(-1deg);
-    }
-    80% {
-      transform: translate(-1px, -1px) rotate(1deg);
-    }
-    90% {
-      transform: translate(1px, 2px) rotate(0deg);
-    }
-    100% {
-      transform: translate(1px, -2px) rotate(-1deg);
-    }
+
+  75% {
+    margin-left: -0.5rem;
   }
-  @keyframes shake3 {
-    0% {
-      transform: translate(1px, 1px) rotate(0deg);
-    }
-    20% {
-      transform: translate(-3px, 0px) rotate(1deg);
-    }
-    40% {
-      transform: translate(1px, -1px) rotate(1deg);
-    }
-    60% {
-      transform: translate(-3px, 1px) rotate(0deg);
-    }
-    90% {
-      transform: translate(1px, 2px) rotate(0deg);
-    }
-    100% {
-      transform: translate(1px, -2px) rotate(-1deg);
-    }
+
+  100% {
+    margin-left: 0rem;
   }
-  @keyframes shake4 {
-    0%,
-    100% {
-      transform: translateX(0);
-    }
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
-      transform: translateX(-10px);
-    }
-    20%,
-    40%,
-    60%,
-    80% {
-      transform: translateX(10px);
-    }
+}
+
+@keyframes shake2 {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
   }
-  @keyframes shake5 {
-    0% {
-      transform: rotate(0deg);
-    }
-    25% {
-      transform: rotate(5deg);
-    }
-    50% {
-      transform: rotate(0eg);
-    }
-    75% {
-      transform: rotate(-5deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
   }
-  @keyframes shake6 {
-    0% {
-      transform: translateX(0);
-    }
-    25% {
-      transform: translateX(5px);
-    }
-    50% {
-      transform: translateX(-5px);
-    }
-    75% {
-      transform: translateX(5px);
-    }
-    100% {
-      transform: translateX(0);
-    }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
   }
-  @keyframes shake7 {
-    0% {
-      transform: translate(0, 0) rotate(0deg);
-    }
-    25% {
-      transform: translate(5px, 5px) rotate(5deg);
-    }
-    50% {
-      transform: translate(0, 0) rotate(0eg);
-    }
-    75% {
-      transform: translate(-5px, 5px) rotate(-5deg);
-    }
-    100% {
-      transform: translate(0, 0) rotate(0deg);
-    }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
   }
-  
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes shake3 {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes shake4 {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake5 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(0eg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes shake6 {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake7 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes progress {
+  100% {
+    right: 100%;
+  }
+}
+
 @media (min-width: 425px) {
-    .contactform .contactform__container {
-        margin: 1em auto;
-        padding: 40px;
-    }
+  .contactform .contactform__container {
+    margin: 1em auto;
+    padding: 40px;
+  }
 }
 
 @media (min-width: 768px) {
-    .contactform .contactform__container {
-        margin: 1em auto 2em;
-        padding: 40px;
-        min-width: 450px;
-        max-width: 650px;
-    }
+  .contactform .contactform__container {
+    margin: 1em auto 2em;
+    padding: 40px;
+    min-width: 450px;
+    max-width: 650px;
+  }
 
-    .contactform .contactform__page-section {
-        padding: 80px;
-    }
+  .contactform .contactform__page-section {
+    padding: 80px;
+  }
 
-    .contactform #name,
-    #umail,
-    #message {
-        width: 400px;
-    }
+  .contactform #name,
+  #umail,
+  #message {
+    width: 400px;
+  }
 }
 
 @supports (-webkit-touch-callout: none) {
-    .contactform {
-        background-attachment: scroll;
-    }
+  .contactform {
+    background-attachment: scroll;
+  }
 }
 
 @supports not (-webkit-touch-callout: none) {
-    .contactform {
-        background-attachment: fixed;
-    }
+  .contactform {
+    background-attachment: fixed;
+  }
 }
