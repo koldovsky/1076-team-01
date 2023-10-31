@@ -3,13 +3,15 @@
         <form action="https://formspree.io/f/mknlydyk" class="contactform__page-section" id="form">
             <h2 class="contactform__title">Write Us</h2>
             <div class="form-control">
-                <input type="text" name="name" id="name" placeholder="Name*" maxlength="55"/><small>Error message</small>
+                <input type="text" name="name" id="name" placeholder="Name*" minlength="3" maxlength="55" /><small>Error
+                    message</small>
             </div>
             <div class="form-control">
-                <input type="email" name="email" id="umail" placeholder="Email*" maxlength="55"/><small>Error message</small>
+                <input type="email" name="email" id="umail" placeholder="Email*" minlength="5"
+                    maxlength="55" /><small>Error message</small>
             </div>
             <div class="form-control">
-                <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"
+                <textarea name="message" id="message" placeholder="Message" cols="30" rows="10" minlength="10"
                     maxlength="2560"></textarea><small>Error message</small>
             </div>
             <div id="myProgress">
@@ -38,8 +40,8 @@
             <i class="fas fa-solid fa-check check"></i>
             <div class="message">
                 <span class="text text-1">Error</span>
-                <span class="text text-2">Form has already been successfully submitted. You can submit again after 24
-                    hours.</span>
+                <span class="text text-2">Form has already been successfully submitted. You can submit again
+                    after 24 hours.</span>
             </div>
         </div>
         <i class="fa-solid fa-xmark close"></i>
