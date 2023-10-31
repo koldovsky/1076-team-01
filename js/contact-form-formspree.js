@@ -4,7 +4,7 @@ function canSubmitForm() {
     const lastSubmitTime = localStorage.getItem("lastSubmitTime");
     if (!lastSubmitTime) return true;
     const currentTime = new Date().getTime();
-    const twentyFourHours = 24;
+    const twentyFourHours = 24 * 60 * 60 * 1000;
     return currentTime - lastSubmitTime >= twentyFourHours;
 }
 
