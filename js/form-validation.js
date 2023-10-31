@@ -64,7 +64,7 @@ email.addEventListener("blur", function () {
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   if (checkRequired([username, email, message])) {
-    checkLength(username, 3, 15);
+    checkLength(username, 3, 55);
     checkEmail(email);
     checkLength(message, 10, 2560);
   }

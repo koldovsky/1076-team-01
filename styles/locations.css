@@ -156,7 +156,7 @@
   border-radius: 12px;
   background: var(--light-color);
   padding: 20px 35px 20px 25px;
-  box-shadow: 0 6px 20px -5px var(--error-color);
+  box-shadow: 0 6px 20px -5px var(--text-dark);
   ;
   overflow: hidden;
   transform: translateX(calc(100% + 30px));
