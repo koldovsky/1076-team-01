@@ -20,16 +20,11 @@ function checkEmail(input) {
   const isEmailValid = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(
     emailValue,
   );
-  const isRuDomain = emailValue.includes(".ru");
-
-  if (isEmailValid && !isRuDomain) {
+  const isRuDomain = emailValue.endsWith(".ru");
+  if (isEmailValid) {
     showSuccess(input);
   } else {
-    if (!isEmailValid) {
       showError(input, "Email is not valid");
-    } else {
-      showError(input, "Email with .ru domains is not allowed");
-    }
   }
 }
 
@@ -43,7 +38,6 @@ function checkRequired(inputArr) {
       showSuccess(input);
     }
   });
-
   return isRequired;
 }
 
@@ -69,9 +63,8 @@ function getFieldName(input) {
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-
   if (checkRequired([username, email, message])) {
-    checkLength(username, 3, 15);
+    checkLength(username, 3, 55);
     checkEmail(email);
     checkLength(message, 10, 2560);
   }

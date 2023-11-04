@@ -1,18 +1,52 @@
 <section id="write-us" class="contactform">
     <div class="contactform__container container contactform__border">
-        <form action="https://formsubmit.co/your@email.com" method="POST" class="contactform__page-section" id="form">
+        <form action="https://formspree.io/f/mknlydyk" class="contactform__page-section" id="form">
             <h2 class="contactform__title">Write Us</h2>
             <div class="form-control">
-                <input type="text" name="name" id="name" placeholder="Name*" /><small>Error message</small>
+                <input type="text" name="name" id="name" placeholder="Name*" minlength="3" maxlength="55" /><small>Error
+                    message</small>
             </div>
             <div class="form-control">
-                <input type="email" name="email" id="umail" placeholder="Email*" /><small>Error message</small>
+                <input type="email" name="email" id="umail" placeholder="Email*" minlength="5"
+                    maxlength="55" /><small>Error message</small>
             </div>
             <div class="form-control">
-                <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"
+                <textarea name="message" id="message" placeholder="Message" cols="30" rows="10" minlength="10"
                     maxlength="2560"></textarea><small>Error message</small>
             </div>
-            <input type="submit" class="contactform__btn" value="SEND" />
+            <div id="myProgress">
+                <div id="myBar">
+                    <input type="submit" class="contactform__btn" value="SEND" />
+                </div>
+            </div>
+            <div class="contactform__page-section-status"></div>
         </form>
+    </div>
+    <div class="toast">
+        <div class="toast-content">
+            <svg width="35px" height="35px" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: #ff0000;
+                            fill-rule: evenodd;
+                        }
+                    </style>
+                </defs>
+                <path class="cls-1"
+                    d="M390.774,690a3.994,3.994,0,0,1,2.824,1.17l15.231,15.23A4,4,0,0,1,410,709.233v21.534a4,4,0,0,1-1.172,2.831L393.6,748.828A3.989,3.989,0,0,1,390.774,750H369.225a3.989,3.989,0,0,1-2.824-1.171l-15.23-15.23A3.994,3.994,0,0,1,350,730.767V709.233a4,4,0,0,1,1.173-2.832l15.23-15.23a3.994,3.994,0,0,1,2.824-1.17h21.549ZM395,729.951A3.406,3.406,0,0,1,395,734.77l-0.22.22a3.42,3.42,0,0,1-4.833,0l-8.764-8.755a1.71,1.71,0,0,0-2.417,0l-8.741,8.746a3.417,3.417,0,0,1-4.836,0l-0.194-.193a3.408,3.408,0,0,1,.017-4.842l8.834-8.735a1.7,1.7,0,0,0,0-2.43l-8.831-8.725a3.409,3.409,0,0,1-.018-4.844l0.193-.193a3.411,3.411,0,0,1,2.418-1c0.944,0,3.255,1.835,3.872,2.455l7.286,7.287a1.708,1.708,0,0,0,2.417,0l8.764-8.748a3.417,3.417,0,0,1,4.831,0L395,705.243a3.406,3.406,0,0,1,0,4.818l-8.727,8.737a1.7,1.7,0,0,0,0,2.407Z"
+                    id="error" transform="translate(-350 -690)" />
+            </svg>
+            <div class="message">
+                <span class="text text-1">Error</span>
+                <span class="text text-2">Form has already been successfully submitted. You can submit again
+                    after 24 hours.</span>
+            </div>
+        </div>
+        <i class="close"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+            </svg></i>
+        <div class="progress"></div>
     </div>
 </section>
