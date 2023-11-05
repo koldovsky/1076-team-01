@@ -1,4 +1,4 @@
-const response = await fetch("/api/products.json");
+const response = await fetch("api/products.json");
 const products = await response.json();
 
 renderProductsList("Breads");
