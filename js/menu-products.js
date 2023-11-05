@@ -1,10 +1,27 @@
-const response = await fetch('api/products.json');
+const response = await fetch("api/products.json");
 const products = await response.json();
+
+const modalContainer = document.getElementById("modal_container");
+const close = document.getElementById("close");
+
+function showModal() {
+  modalContainer.classList.add("show");
+  setTimeout(() => {
+    modalContainer.classList.remove("show");
+  }, 4000);
+}
+
+close.addEventListener("click", () => {
+  modalContainer.classList.remove("show");
+});
 
 renderProductsList("Breads");
 
 function renderProductsList(category) {
-    const productItems = products.filter(item => item.category === category).map(item => (
+  const productItems = products
+    .filter((item) => item.category === category)
+    .map(
+      (item) =>
         `<li class="menu__item">
             <div class="menu__item-title">
                 <span class="menu__item-dish">${item.title}</span>
@@ -26,38 +43,38 @@ function renderProductsList(category) {
                 ${item.description}
             </p>
         </li>`
-    ));
+    );
 
-    const productList = document.querySelector(".menu__list");
-    productList.innerHTML = productItems.join(" ");
-    const addItemBtns = document.querySelectorAll('.menu__item-btn-buy')
-    addItemBtns.forEach(button => button.addEventListener('click', (event) => {
-        let id = event.currentTarget.id
+  const productList = document.querySelector(".menu__list");
+  productList.innerHTML = productItems.join(" ");
+  const addItemBtns = document.querySelectorAll(".menu__item-btn-buy");
+  addItemBtns.forEach((button) =>
+    button.addEventListener("click", (event) => {
+      let id = event.currentTarget.id;
 
-        let cart = JSON.parse(localStorage.getItem('cart')) || {}
-        if (!cart[id]) {
-          cart[id] = 1;
-        } else {
-          cart[id] = cart[id] + 1;
-        }
-        console.log(cart)
-        localStorage.setItem("cart", JSON.stringify(cart));
-    }))
+      let cart = JSON.parse(localStorage.getItem("cart")) || {};
+      if (!cart[id]) {
+        cart[id] = 1;
+      } else {
+        cart[id] = cart[id] + 1;
+      }
+      localStorage.setItem("cart", JSON.stringify(cart));
+      showModal();
+    })
+  );
 }
 
-  
-
 const categoryBtns = document.querySelector(".menu__buttons");
-const listBtns = document.querySelectorAll(".menu__link")
-
+const listBtns = document.querySelectorAll(".menu__link");
 
 categoryBtns.addEventListener("click", (event) => {
-    event.preventDefault();
-    if (event.target.dataset.category) {
-        listBtns.forEach(btn => {
-            btn === event.target ? btn.classList.add("active") : btn.classList.remove("active");
-        });
-        renderProductsList(event.target.dataset.category);
-    }
+  event.preventDefault();
+  if (event.target.dataset.category) {
+    listBtns.forEach((btn) => {
+      btn === event.target
+        ? btn.classList.add("active")
+        : btn.classList.remove("active");
+    });
+    renderProductsList(event.target.dataset.category);
+  }
 });
-
