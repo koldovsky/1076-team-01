@@ -6,27 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="img/bread_shorticon.png" type="image/png" />
   <link rel="stylesheet" href="styles/menu-page.css">
-  <title>Menu Page| Bakery</title>
+  <title>Menu Page | Bakery</title>
 </head>
-  <header class="header">
-    <div class="header__background--dark">
-      <div class="header__container container">
-        <nav data-include="header-nav.partial.html"></nav>
+<header class="header">
+  <div class="header__background--dark">
+    <div class="header__container container">
+      <nav data-include="header-nav.partial.html"></nav>
+    </div>
+  </div>
+</header>
+
+<body>
+  <section class="menu_mainpage">
+    <div data-include="menu-section.partial.html"></div>
+  </section>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__wrap" data-include="footer.partial.html">
       </div>
     </div>
-  </header>
-  <body>
-   <section class="menu_mainpage">
-        <div data-include="menu-section.partial.html"></div>
-   </section>
-    <footer class="footer">
-      <div class="footer__container container">
-          <div class="footer__wrap" data-include="footer.partial.html">
-          </div>
-      </div>
   </footer>
-    <script type="module" src="./js/menu-page.js"></script>
-    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
-  </body>
+  <script type="module" src="./js/menu-page.js"></script>
+  <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+</body>
 
 </html>
