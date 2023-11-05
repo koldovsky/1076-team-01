@@ -88,7 +88,6 @@
   border-radius: 50%;
   border: none;
   padding: 8px;
-  transition: all 0.5s ease-in-out;
   cursor: pointer;
   margin-top: -10px;
 }
