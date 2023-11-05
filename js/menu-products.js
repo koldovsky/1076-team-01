@@ -35,9 +35,11 @@ function renderProductsList(category) {
 const categoryBtns = document.querySelector(".menu__buttons");
 const listBtns = document.querySelectorAll(".menu__link")
 categoryBtns.addEventListener("click", (event) => {
-    listBtns.forEach(btn => {
-        btn === event.target ? btn.classList.add("active") : btn.classList.remove("active");
-    });
     event.preventDefault();
-    renderProductsList(event.target.dataset.category);
+    if (event.target.dataset.category) {
+        listBtns.forEach(btn => {
+            btn === event.target ? btn.classList.add("active") : btn.classList.remove("active");
+        });
+        renderProductsList(event.target.dataset.category);
+    }
 });
