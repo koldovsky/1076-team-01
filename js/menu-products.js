@@ -11,9 +11,11 @@ function showModal() {
   }, 4000);
 }
 
-close.addEventListener("click", () => {
-  modalContainer.classList.remove("show");
-});
+if (close) {
+  close.addEventListener("click", () => {
+    modalContainer.classList.remove("show");
+  });
+}
 
 renderProductsList("Breads");
 

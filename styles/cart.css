@@ -79,7 +79,7 @@
 .cart__quantity-span {
   margin: 0 20px;
 }
-.shopping-cart-icon {
+.header .shopping-cart-icon {
   fill: var(--text-warm-light);
   transition: all 0.5s ease-in-out;
   min-width: 46px;
@@ -91,7 +91,7 @@
   cursor: pointer;
   margin-top: -10px;
 }
-.shopping-cart-icon:hover {
+.header .shopping-cart-icon:hover {
   background: #ffffff1c;
 }
 .cart-total{
