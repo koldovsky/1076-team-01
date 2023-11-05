@@ -7,7 +7,7 @@
     background: linear-gradient(to right,
             rgba(104, 79, 64, 0.9),
             rgba(104, 79, 64, 0.9)),
-        url(/img/menu-background.jpeg) 50% 50% / cover no-repeat;
+        url(../img/menu-background.jpeg) 50% 50% / cover no-repeat;
 }
 
 .menu_mainpage .menu {
