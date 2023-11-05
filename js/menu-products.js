@@ -9,7 +9,7 @@ function renderProductsList(category) {
             <div class="menu__item-title">
                 <span class="menu__item-dish">${item.title}</span>
                 <span class="menu__item-price">$${item.price}</span>
-                <a href="#" class="menu__item-btn-buy">
+                <span class="menu__item-btn-buy" id=${item.id}>
                     <svg class="shopping-cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                         <rect width="256" height="256" fill="none" />
                         <path d="M42.3,72H221.7l-26.4,92.4A15.9,15.9,0,0,1,179.9,176H84.1a15.9,15.9,0,0,1-15.4-11.6Z"
@@ -20,7 +20,7 @@ function renderProductsList(category) {
                             d="M42.3,72H221.7l-26.4,92.4A15.9,15.9,0,0,1,179.9,176H84.1a15.9,15.9,0,0,1-15.4-11.6L32.5,37.8A8,8,0,0,0,24.8,32H8"
                             fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
                     </svg>
-                </a>
+                </span>
             </div>
             <p class="menu__item-description">
                 ${item.description}
@@ -30,10 +30,27 @@ function renderProductsList(category) {
 
     const productList = document.querySelector(".menu__list");
     productList.innerHTML = productItems.join(" ");
+    const addItemBtns = document.querySelectorAll('.menu__item-btn-buy')
+    addItemBtns.forEach(button => button.addEventListener('click', (event) => {
+        let id = event.currentTarget.id
+
+        let cart = JSON.parse(localStorage.getItem('cart')) || {}
+        if (!cart[id]) {
+          cart[id] = 1;
+        } else {
+          cart[id] = cart[id] + 1;
+        }
+        console.log(cart)
+        localStorage.setItem("cart", JSON.stringify(cart));
+    }))
 }
+
+  
 
 const categoryBtns = document.querySelector(".menu__buttons");
 const listBtns = document.querySelectorAll(".menu__link")
+
+
 categoryBtns.addEventListener("click", (event) => {
     event.preventDefault();
     if (event.target.dataset.category) {
@@ -43,3 +60,4 @@ categoryBtns.addEventListener("click", (event) => {
         renderProductsList(event.target.dataset.category);
     }
 });
+
