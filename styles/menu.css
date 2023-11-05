@@ -7,7 +7,7 @@
     background: linear-gradient(to right,
             rgba(104, 79, 64, 0.9),
             rgba(104, 79, 64, 0.9)),
-        url(https://res2.weblium.site/res/5cb43e8114a01200248b0171/5ccd900b7ec61c0023c7b410_optimized_2560) 50% 50% / cover no-repeat;
+        url(/img/menu-background.jpeg) 50% 50% / cover no-repeat;
 }
 
 .menu_mainpage .menu {
