@@ -44,7 +44,7 @@ function changeQuantity(e) {
 
 async function renderCart() {
   let total = 0;
-  let cart = JSON.parse(localStorage.getItem("cart"));
+  let cart = JSON.parse(localStorage.getItem("cart")) || {};
   let cartHtml = `<li class="cart-item cart-header">
                     <div class="cart__item-header-name">Name:</div>
                     <div class="cart__item-header-price">Price:</div>
