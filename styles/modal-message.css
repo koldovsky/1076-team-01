@@ -13,15 +13,9 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  opacity: 0;
-  pointer-events: none;
+  pointer-events: auto;
   transition: all 800ms ease-in-out;
   z-index: 999;
-}
-
-.modal-container.show {
-  opacity: 1;
-  pointer-events: auto;
 }
 
 .message-modal {
