@@ -3,6 +3,7 @@ const products = await response.json();
 
 const modalContainer = document.getElementById("modal_container");
 const close = document.getElementById("close");
+const cartQuantity = document.querySelector(".cart-items-quantity");
 
 function showModal() {
   modalContainer.classList.add("show");
@@ -50,16 +51,19 @@ function renderProductsList(category) {
   const productList = document.querySelector(".menu__list");
   productList.innerHTML = productItems.join(" ");
   const addItemBtns = document.querySelectorAll(".menu__item-btn-buy");
+
   addItemBtns.forEach((button) =>
     button.addEventListener("click", (event) => {
       let id = event.currentTarget.id;
 
       let cart = JSON.parse(localStorage.getItem("cart")) || {};
+
       if (!cart[id]) {
         cart[id] = 1;
       } else {
         cart[id] = cart[id] + 1;
       }
+      cartQuantity.innerHTML = Object.keys(cart).length;
       localStorage.setItem("cart", JSON.stringify(cart));
       showModal();
     })

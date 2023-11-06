@@ -3,14 +3,13 @@ const cartWrapper = document.querySelector(".cart-wrapper");
 const cartItems = document.querySelector(".cart-items");
 const closeCartButton = document.querySelector(".cart__close-btn");
 const openCartButton = document.querySelector(".cart__open-btn");
-
+const cartQuantity = document.querySelector(".cart-items-quantity");
 
 function closeCart() {
   cartWrapper.style.transform = "translateY(-170px)";
   modal.style.opacity = 0;
   setTimeout(() => (modal.style.display = "none"), 1000);
 }
-
 
 function openCart() {
   renderCart();
@@ -21,14 +20,13 @@ function openCart() {
   }, 0);
 }
 
-
-function deleteItem(e){
+function deleteItem(e) {
   let cartItem = e.target.closest(".cart-item");
   let id = cartItem.id;
   let cart = JSON.parse(localStorage.getItem("cart"));
-  delete cart[id]
-  localStorage.setItem('cart', JSON.stringify(cart))
-  renderCart()
+  delete cart[id];
+  localStorage.setItem("cart", JSON.stringify(cart));
+  renderCart();
 }
 
 function changeQuantity(e) {
@@ -39,11 +37,10 @@ function changeQuantity(e) {
 
   if (operation === "+") cart[id] += 1;
   if (operation === "-" && cart[id] > 1) cart[id] -= 1;
-  
+
   localStorage.setItem("cart", JSON.stringify(cart));
   renderCart();
 }
-
 
 async function renderCart() {
   let total = 0;
@@ -58,6 +55,7 @@ async function renderCart() {
   if (!cart || Object.keys(cart).length === 0) {
     cartHtml += `<li class="cart-item cart-empty">Your cart is empty!</li>`;
     cartItems.innerHTML = cartHtml;
+    cartQuantity.innerHTML = Object.keys(cart).length;
     return;
   }
 
@@ -76,7 +74,9 @@ async function renderCart() {
                       <span class="cart__quantity-span">${cart[id]}</span>
                       <span class="cart__change-quant-btn" operation="+">+</span>
                    </div>
-                   <div class="cart__item-total">$${itemTotal.toFixed(2)}<span class="delete-item-btn"></span></div>
+                   <div class="cart__item-total">$${itemTotal.toFixed(
+                     2
+                   )}<span class="delete-item-btn"></span></div>
                 </li>`;
 
     total += itemTotal;
@@ -85,18 +85,21 @@ async function renderCart() {
   cartHtml += `<li class="cart-item cart-total">Total price: $${total.toFixed(2)}</li>`;
 
   cartItems.innerHTML = cartHtml;
+  cartQuantity.innerHTML = Object.keys(cart).length;
 
-  const quantityButtons = cartItems.querySelectorAll('.cart__change-quant-btn');
-  const deleteBtns = cartItems.querySelectorAll('.delete-item-btn')
+  const quantityButtons = cartItems.querySelectorAll(".cart__change-quant-btn");
+  const deleteBtns = cartItems.querySelectorAll(".delete-item-btn");
 
   quantityButtons.forEach((btn) =>
     btn.addEventListener("click", (e) => changeQuantity(e))
   );
 
   deleteBtns.forEach((btn) => {
-    btn.addEventListener('click', (e) => deleteItem(e))
-  })
+    btn.addEventListener("click", (e) => deleteItem(e));
+  });
 }
 
 openCartButton.addEventListener("click", openCart);
 closeCartButton.addEventListener("click", closeCart);
+
+renderCart()

@@ -17,6 +17,19 @@
   width: 20px;
   color: #fefefe;
 }
+.cart-items-quantity{
+   width: 23px;
+   height: 23px;
+   padding-top: 2px;
+   background-color: brown;
+   color: #fefefe;
+   position: absolute;
+   border-radius: 25px;
+   right: -10px;
+   top: -10px;
+   text-align: center;
+   font-size: 14px;
+}
 
 .cart-wrapper {
   background-color: #fefefe;
@@ -118,6 +131,7 @@
 
 .cart__open-btn {
   margin: 0 0 -6px;
+  position: relative;
 }
 
 .header__cart-btn-buy {
@@ -145,6 +159,10 @@
   font-weight: 400;
   border-top: 2px solid var(--text-dark);
   padding-top: 10px;
+}
+
+.cart__change-quant-btn{
+  cursor: pointer;
 }
 
 @media (min-width: 320px) {
