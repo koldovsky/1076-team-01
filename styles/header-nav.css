@@ -163,6 +163,7 @@
 
     .header__nav {
         padding: 45px 0;
+        gap: 8px;
     }
 
     .header__menu-btn {
