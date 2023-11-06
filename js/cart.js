@@ -17,10 +17,19 @@ function openCart() {
   modal.style.display = "block";
   setTimeout(() => {
     modal.style.opacity = 1.5;
-    cartWrapper.style.transform = "translateY(90px)";
+    cartWrapper.style.transform = "translateY(10%)";
   }, 0);
 }
 
+
+function deleteItem(e){
+  let cartItem = e.target.closest(".cart-item");
+  let id = cartItem.id;
+  let cart = JSON.parse(localStorage.getItem("cart"));
+  delete cart[id]
+  localStorage.setItem('cart', JSON.stringify(cart))
+  renderCart()
+}
 
 function changeQuantity(e) {
   let cartItem = e.target.closest(".cart-item");
@@ -43,11 +52,11 @@ async function renderCart() {
                     <div class="cart__item-header-name">Name:</div>
                     <div class="cart__item-header-price">Price:</div>
                     <div class="cart__item-header-quantity">Quantity:</div>
-                    <div class="cart__item-header-total">Total for item:</div>
+                    <div class="cart__item-header-total">Total:</div>
                   </li>`;
 
-  if (!cart) {
-    cartHtml += `<li class="cart-item cart-total">Your cart is empty!</li>`;
+  if (!cart || Object.keys(cart).length === 0) {
+    cartHtml += `<li class="cart-item cart-empty">Your cart is empty!</li>`;
     cartItems.innerHTML = cartHtml;
     return;
   }
@@ -67,21 +76,26 @@ async function renderCart() {
                       <span class="cart__quantity-span">${cart[id]}</span>
                       <span class="cart__change-quant-btn" operation="+">+</span>
                    </div>
-                   <div class="cart__item-total">$${itemTotal}</div>
+                   <div class="cart__item-total">$${itemTotal}<span class="delete-item-btn"></span></div>
                 </li>`;
 
     total += itemTotal;
   }
 
-  cartHtml += `<li class="cart-item cart-total">Total: $${total}</li>`;
+  cartHtml += `<li class="cart-item cart-total">Total price: $${total}</li>`;
 
   cartItems.innerHTML = cartHtml;
 
-  const quantityButtons = cartItems.querySelectorAll(".cart__change-quant-btn");
+  const quantityButtons = cartItems.querySelectorAll('.cart__change-quant-btn');
+  const deleteBtns = cartItems.querySelectorAll('.delete-item-btn')
 
   quantityButtons.forEach((btn) =>
     btn.addEventListener("click", (e) => changeQuantity(e))
   );
+
+  deleteBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => deleteItem(e))
+  })
 }
 
 openCartButton.addEventListener("click", openCart);

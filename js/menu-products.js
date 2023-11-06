@@ -8,7 +8,7 @@ function showModal() {
   modalContainer.classList.add("show");
   setTimeout(() => {
     modalContainer.classList.remove("show");
-  }, 4000);
+  }, 1500);
 }
 
 if (close) {
