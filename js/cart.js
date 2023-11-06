@@ -82,7 +82,7 @@ async function renderCart() {
     total += itemTotal;
   }
 
-  cartHtml += `<li class="cart-item cart-total">Total price: $${total}</li>`;
+  cartHtml += `<li class="cart-item cart-total">Total price: $${total.toFixed(2)}</li>`;
 
   cartItems.innerHTML = cartHtml;
 
