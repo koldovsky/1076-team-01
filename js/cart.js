@@ -66,7 +66,7 @@ async function renderCart() {
 
   for (const id in cart) {
     let product = products.find((product) => product.id === Number(id));
-    let itemTotal = Math.round(cart[id] * product.price);
+    let itemTotal = cart[id] * product.price;
 
     cartHtml += `<li class="cart-item" id="${id}">
                    <div class="cart__item-name">${product.title}</div>
@@ -76,7 +76,7 @@ async function renderCart() {
                       <span class="cart__quantity-span">${cart[id]}</span>
                       <span class="cart__change-quant-btn" operation="+">+</span>
                    </div>
-                   <div class="cart__item-total">$${itemTotal}<span class="delete-item-btn"></span></div>
+                   <div class="cart__item-total">$${itemTotal.toFixed(2)}<span class="delete-item-btn"></span></div>
                 </li>`;
 
     total += itemTotal;
