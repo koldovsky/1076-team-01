@@ -16,6 +16,7 @@
   opacity: 0;
   pointer-events: none;
   transition: all 800ms ease-in-out;
+  z-index: 999;
 }
 
 .modal-container.show {
@@ -34,6 +35,7 @@
   animation: slide-up 0.5s ease;
   font-family: 'Prata', sans-serif;
   position: relative; /* Додаємо цей рядок */
+  z-index: 1000;
 }
 
 .close-btn {
