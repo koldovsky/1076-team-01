@@ -87,13 +87,19 @@ p {
 .btn {
     background: none;
     border:none;
-    margin: 15px;
-    height: 40px;
-    width: 40px;
+    border-radius: 10%;
+    font-size: large;
+    margin-top: 25px;
+    height: 30px;
+    width: 50px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: var(--background-contact-form);
 }
 .btn-icon {
-    color: var(--text-warm-light)
+    color: var(--text-warm-light)    
 }
 .about-story {
     padding: 90px 0;
