@@ -144,9 +144,7 @@
 .menu__item-btn-buy {
     min-width: 46px;
     height: 46px;
-    background: none;
     border-radius: 50%;
-    border: none;
     padding: 8px;
     margin: 0 0 0 4px;
     transition: all 0.5s ease-in-out;

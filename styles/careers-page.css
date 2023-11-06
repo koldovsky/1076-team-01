@@ -3,9 +3,8 @@
 @import url(footer.css);
 @import url(cart.css);
 
-.header__banner-wrapper{
+.header__banner-wrapper {
     background-image: linear-gradient(90deg, rgb(15,16,17) 0%, rgb(15,16,17, 0.25) 100%), url("../img/carrers-banner-bg.webp");
-    background-attachment: fixed;
     background-repeat: no-repeat; 
     background-size: cover;
 }
@@ -166,6 +165,18 @@
 @media (min-width: 1200px) {
     .header__banner-wrapper{
         background-position-y: -3.5rem;
+    }
+}
+
+@supports (-webkit-touch-callout : none) {
+    .header__banner-wrapper {
+        background-attachment: scroll;
+    }
+}
+
+@supports not (-webkit-touch-callout : none) {
+    .header__banner-wrapper {
+        background-attachment: fixed;
     }
 }
 
