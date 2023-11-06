@@ -102,6 +102,14 @@
   transition: all 0.5s ease-in-out;
 }
 
+.header__cart-btn-buy .shopping-cart-icon {
+  fill: var(--text-warm-light);
+}
+
+.header__cart-btn-buy .shopping-cart-icon .handle-path {
+  stroke: var(--text-warm-light);
+}
+
 .header__cart-btn-buy:hover {
   transform: scale(1.14);
 }
