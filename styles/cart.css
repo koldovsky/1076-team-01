@@ -74,7 +74,7 @@
 
 .cart__close-btn {
   min-width: 30px;
-  min-height: 50px;
+  min-height: 30px;
   border: none;
   background: transparent;
   float: right;
@@ -100,7 +100,7 @@
   float: right;
   background: transparent;
   position: relative;
-  padding: 0 12px;
+  cursor: pointer;
 }
 
 .delete-item-btn:before,
@@ -110,7 +110,6 @@
   height: 3px;
   top: 10px;
   left: 0;
-  display: block;
   position: absolute;
   background: var(--btn-primary);
 }
@@ -202,7 +201,8 @@
      margin-right: 15px;
   }
   .delete-item-btn{
-    padding: 0 7px;
+    min-width: 13px;
+    min-height: 13px;
   }
 }
 
@@ -226,7 +226,8 @@
     margin: 0px 5px;
   }
   .delete-item-btn{
-    padding: 0 10px;
+    min-width: 15px;
+    min-height: 15px;
   }
 }
 
@@ -237,5 +238,9 @@
     margin: 7% auto;
     padding: 20px;
     border-radius: 20px;
+  }
+  .delete-item-btn{
+    min-width: 20px;
+    min-height: 20px;
   }
 }
