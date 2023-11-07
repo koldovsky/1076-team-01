@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 
 .modal-container {
   background-color: rgba(0, 0, 0, 0.3);
@@ -13,15 +11,9 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  opacity: 0;
-  pointer-events: none;
+  pointer-events: auto;
   transition: all 800ms ease-in-out;
   z-index: 999;
-}
-
-.modal-container.show {
-  opacity: 1;
-  pointer-events: auto;
 }
 
 .message-modal {
@@ -33,28 +25,33 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
   animation: slide-up 0.5s ease;
-  font-family: 'Prata', sans-serif;
-  position: relative; /* Додаємо цей рядок */
+  font-family: "Prata", sans-serif;
+  position: relative; 
   z-index: 1000;
 }
 
 .close-btn {
   background: transparent;
-  color: black;
+  color: var(--text-dark);
   font-size: 14px;
   position: absolute;
-  top: 5px; /* Зменшуємо вертикальний відступ для центру */
-  right: 14px; /* Зменшуємо горизонтальний відступ для центру */
+  top: 12px;
+  right: 16px;
   cursor: pointer;
-  border: none; /* Видаляємо обводку */
-  padding: 0; /* Видаляємо внутрішні відступи (попередні стилі були додатковими) */
+  border: none;
+  padding: 0;
+  transition: color 0.4s ease-in-out;
 }
 
+.close-btn:hover {
+  color: var(--error-color);
+}
 
 .message-modal h1 {
   margin: 0;
   font-size: 20px;
   max-width: 100%;
+  margin-bottom: 20px;
 }
 
 .message-modal p {
@@ -62,9 +59,6 @@
   opacity: 0.7;
 }
 
-
-
-/* Нова анімація для закриття згори вниз */
 @keyframes slide-up {
   from {
     transform: translateY(100%);
