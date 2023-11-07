@@ -274,6 +274,8 @@
   .contactform .contactform__container {
     margin: 1em auto;
     padding: 20px;
+    min-width: 310px;
+    max-width: 415px;
   }
 }
 
