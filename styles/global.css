@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Prata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
-/* Our fonts:
-    font-family: 'Lato', sans-serif;
-    font-family: 'Prata', serif; */
  
 * {
     margin: 0;
@@ -41,8 +38,10 @@
     --border-contact-form-dark: #84ADCB;
     --our-bread-text-description: rgb(112,110,110);
     --background-contact-form: rgba(0, 0, 0, 0.6);
+    --menu-btn-icon-light-hover: #ffffff1c;
+    --menu-btn-icon-dark-hover: #ffca843d;
+    --menu-svg-fill-hover: #ffac4040;
     --error-color: red;
-    /* --font-lato-sans-serif: "Lato", sans-serif; */
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
 }
