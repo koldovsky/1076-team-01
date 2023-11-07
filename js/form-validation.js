@@ -1,7 +1,7 @@
 const form = document.getElementById("form");
 const username = document.getElementById("name");
 const email = document.getElementById("umail");
-const message = document.getElementById("message");
+const textMessage = document.getElementById("message");
 
 function showError(input, message) {
   const formControl = input.parentElement;
@@ -24,7 +24,7 @@ function checkEmail(input) {
   if (isEmailValid) {
     showSuccess(input);
   } else {
-      showError(input, "Email is not valid");
+    showError(input, "Email is not valid");
   }
 }
 
@@ -63,9 +63,9 @@ function getFieldName(input) {
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  if (checkRequired([username, email, message])) {
+  if (checkRequired([username, email, textMessage])) {
     checkLength(username, 3, 55);
     checkEmail(email);
-    checkLength(message, 10, 2560);
+    checkLength(textMessage, 10, 2560);
   }
 });
