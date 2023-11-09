@@ -50,6 +50,18 @@ hr {
     border-bottom: 1px solid var(--text-variant-grey);
     margin: 0 auto;
 }
+.prev, .next {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--btn-primary);
+    padding: 20px;
+    margin: 20px 8px;
+    color: var(--light-color);
+}
+.prev:hover, .next:hover {
+    background-color: var(--btn-primary-hover);
+    cursor: pointer;
+}
 
 @media (min-width: 320px) {
     .handcrafted__text {
