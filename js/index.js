@@ -7,4 +7,5 @@ document.addEventListener("partialsLoaded", () => {
   import("./about-us-our-clients.js");
   import("./recipes-breads.js");
   import("./locations-cards.partial.js");
+  import("./footer-partial.js");
 });
