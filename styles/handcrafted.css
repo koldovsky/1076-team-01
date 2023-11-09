@@ -36,10 +36,11 @@ hr {
     font-weight: 400;
     font-size: 36px;
     color: var(--light-color);
+    flex-shrink: 0;
 }
 
 .handcrafted__text {
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     color: var(--light-color);
     font-family: 'Lato', serif;
     font-size: 20px;
@@ -50,14 +51,16 @@ hr {
     border-bottom: 1px solid var(--text-variant-grey);
     margin: 0 auto;
 }
+
 .prev, .next {
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     background-color: var(--btn-primary);
-    padding: 20px;
-    margin: 20px 8px;
+    padding: 8px 12px;
+    margin: 20px 8px 0;
     color: var(--light-color);
 }
+
 .prev:hover, .next:hover {
     background-color: var(--btn-primary-hover);
     cursor: pointer;
@@ -75,7 +78,7 @@ hr {
     }
 
     .handcrafted__text {
-        margin: 0 30px 30px;
+        margin: 0 30px 45px;
     }
 }
 
@@ -85,7 +88,26 @@ hr {
     }
 
     .handcrafted__text {
-        margin: 0 25px 30px;
+        margin: 0 25px 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .handcrafted__container.container {
+        position: relative;
+    }
+
+    .prev, .next {
+        position: absolute;
+        top: 40%;
+    }
+    
+    .prev {
+        left: 13%;
+    }
+
+    .next {
+        right: 13%;
     }
 }
 
