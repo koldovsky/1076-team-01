@@ -36,6 +36,11 @@
   min-width: 100%;
 }
 
+.footer__link-element:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 @media (min-width: 320px) {
 
   .footer__logo a,
