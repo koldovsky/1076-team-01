@@ -52,7 +52,8 @@ hr {
     margin: 0 auto;
 }
 
-.prev, .next {
+.prev,
+.next {
     border: none;
     border-radius: 50px;
     background-color: var(--btn-primary);
@@ -61,7 +62,8 @@ hr {
     color: var(--light-color);
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: var(--btn-primary-hover);
     cursor: pointer;
 }
@@ -97,11 +99,16 @@ hr {
         position: relative;
     }
 
-    .prev, .next {
+    .handcrafted {
+        padding: 90px 0 100px;
+    }
+
+    .prev,
+    .next {
         position: absolute;
         top: 40%;
     }
-    
+
     .prev {
         left: 13%;
     }
@@ -111,15 +118,14 @@ hr {
     }
 }
 
-@supports ( -webkit-touch-callout : none) {
+@supports (-webkit-touch-callout : none) {
     .handcrafted {
-        background-attachment:scroll;
+        background-attachment: scroll;
     }
 }
 
-@supports not ( -webkit-touch-callout : none) {
+@supports not (-webkit-touch-callout : none) {
     .handcrafted {
         background-attachment: fixed;
     }
 }
-
